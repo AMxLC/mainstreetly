@@ -1,0 +1,34 @@
+{
+  "name": "@mainstreetly/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./db": {
+      "import": "./dist/db/index.js",
+      "types": "./dist/db/index.d.ts"
+    },
+    "./db/schema": {
+      "import": "./dist/db/schema.js",
+      "types": "./dist/db/schema.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.38.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.0",
+    "typescript": "^5.7.0"
+  }
+}

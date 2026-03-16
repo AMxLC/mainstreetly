@@ -1,0 +1,33 @@
+{
+  "name": "mainstreetly",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Small Business MCP Gateway \u2014 the bridge between AI agents and local service businesses",
+  "license": "BUSL-1.1",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter mcp-server dev",
+    "start": "pnpm --filter mcp-server start",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "seed:osm": "tsx scripts/seed-osm.ts",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

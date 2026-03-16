@@ -1,0 +1,139 @@
+// MCP response types — optimized for token efficiency
+
+export interface BusinessSearchResult {
+  id: string;
+  name: string;
+  category: string;
+  address: string;
+  distance_km: number | null;
+  rating: number | null;
+  ratings: {
+    google: number | null;
+    yelp: number | null;
+    reviews: number | null;
+  };
+  phone: string | null;
+  website: string | null;
+  hours_today: string | null;
+  profile_status: string;
+  services_available: boolean;
+  booking_available: boolean;
+}
+
+export interface SearchResponse {
+  results: BusinessSearchResult[];
+  count: number;
+  query: string;
+}
+
+export interface BusinessHours {
+  [day: string]:
+    | { open: string; close: string }
+    | "closed"
+    | "24hours";
+}
+
+export interface BusinessProfile {
+  id: string;
+  name: string;
+  category: string;
+  subcategories: string[];
+  address: string;
+  coordinates: { lat: number; lng: number };
+  phone: string | null;
+  website: string | null;
+  email: string | null;
+  hours: BusinessHours | null;
+  ratings: {
+    google: { score: number | null; count: number | null };
+    yelp: { score: number | null; count: number | null };
+    facebook: number | null;
+    composite: number | null;
+    total_reviews: number | null;
+  };
+  profile_status: string;
+  services: ServiceInfo[];
+  booking_available: boolean;
+  availability_available: boolean;
+}
+
+export interface ServiceInfo {
+  id: string;
+  name: string;
+  description: string | null;
+  price_min: number | null;
+  price_max: number | null;
+  duration_minutes: number | null;
+}
+
+export interface CategoryCount {
+  category: string;
+  count: number;
+}
+
+// OSM tag → category mapping
+export const OSM_CATEGORY_MAP: Record<string, string> = {
+  // shop tags
+  hairdresser: "hair_salon",
+  beauty: "beauty_salon",
+  barber: "barber",
+  car_repair: "auto_repair",
+  car_parts: "auto_parts",
+  laundry: "laundry",
+  dry_cleaning: "dry_cleaning",
+
+  // amenity tags
+  dentist: "dentist",
+  doctors: "doctor",
+  clinic: "clinic",
+  veterinary: "veterinarian",
+  restaurant: "restaurant",
+  cafe: "cafe",
+  fast_food: "fast_food",
+  childcare: "childcare",
+
+  // craft tags
+  plumber: "plumber",
+  electrician: "electrician",
+  hvac: "hvac",
+  painter: "painter",
+  carpenter: "carpenter",
+
+  // office tags
+  estate_agent: "real_estate",
+  lawyer: "lawyer",
+  accountant: "accountant",
+
+  // leisure tags
+  fitness_centre: "gym",
+  spa: "spa",
+};
+
+// Human-readable category labels
+export const CATEGORY_LABELS: Record<string, string> = {
+  barber: "Barber",
+  hair_salon: "Hair Salon",
+  beauty_salon: "Beauty Salon",
+  dentist: "Dentist",
+  doctor: "Doctor",
+  clinic: "Clinic",
+  veterinarian: "Veterinarian",
+  plumber: "Plumber",
+  electrician: "Electrician",
+  hvac: "HVAC",
+  painter: "Painter",
+  carpenter: "Carpenter",
+  auto_repair: "Auto Repair",
+  auto_parts: "Auto Parts",
+  restaurant: "Restaurant",
+  cafe: "Cafe",
+  fast_food: "Fast Food",
+  laundry: "Laundry",
+  dry_cleaning: "Dry Cleaning",
+  real_estate: "Real Estate",
+  lawyer: "Lawyer",
+  accountant: "Accountant",
+  childcare: "Childcare",
+  gym: "Gym / Fitness",
+  spa: "Spa",
+};

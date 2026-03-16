@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Secrets
+*.pem
+*.key
+credentials.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Data files (large CSVs from scrapers)
+data/
+*.csv
+!scripts/data/.gitkeep
+
+# Drizzle
+drizzle/meta/
