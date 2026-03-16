@@ -11,6 +11,23 @@
 import { getDb, businesses } from "@mainstreetly/shared";
 import { OSM_CATEGORY_MAP } from "@mainstreetly/shared";
 import { sql } from "drizzle-orm";
+import { readFileSync } from "fs";
+
+// Load .env file if present
+try {
+  const envContent = readFileSync(".env", "utf-8");
+  for (const line of envContent.split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const eqIndex = trimmed.indexOf("=");
+    if (eqIndex === -1) continue;
+    const key = trimmed.slice(0, eqIndex);
+    const value = trimmed.slice(eqIndex + 1);
+    if (!process.env[key]) process.env[key] = value;
+  }
+} catch {
+  // .env not found, rely on environment variables
+}
 
 // Austin bounding box: south, west, north, east
 const AUSTIN_BBOX = "30.1,-97.95,30.55,-97.55";
