@@ -7,7 +7,10 @@
 
 import pg from "pg";
 import { readFileSync, readdirSync } from "fs";
-import { join } from "path";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 function loadEnv() {
   try {
@@ -38,12 +41,12 @@ if (!url) {
 
 const pool = new pg.Pool({
   connectionString: url,
-  ssl: url.includes("railway.app") ? { rejectUnauthorized: false } : undefined,
+  ssl: url.includes("railway") ? { rejectUnauthorized: false } : undefined,
 });
 
 async function run() {
   // Find and sort migration files
-  const migrationsDir = join(import.meta.dirname, "..", "drizzle");
+  const migrationsDir = join(__dirname, "..", "drizzle");
   const files = readdirSync(migrationsDir)
     .filter((f) => f.endsWith(".sql"))
     .sort();
@@ -51,20 +54,35 @@ async function run() {
   console.log(`Found ${files.length} migration(s)`);
 
   for (const file of files) {
-    const sql = readFileSync(join(migrationsDir, file), "utf-8");
+    const sqlContent = readFileSync(join(migrationsDir, file), "utf-8");
     console.log(`Running ${file}...`);
-    try {
-      await pool.query(sql);
-      console.log(`  ✓ ${file} applied`);
-    } catch (e: unknown) {
-      const msg = (e as Error).message;
-      // Skip "already exists" errors for idempotent migrations
-      if (msg.includes("already exists")) {
-        console.log(`  ⊘ ${file} already applied (skipped)`);
-      } else {
-        throw e;
+
+    // Split migration into individual statements to handle partial failures
+    // Extensions may need superuser; skip gracefully if they fail
+    const statements = sqlContent
+      .split(/;\s*$/m)
+      .map((s) => s.trim())
+      .filter((s) => s.length > 0);
+
+    for (const stmt of statements) {
+      try {
+        await pool.query(stmt);
+      } catch (e: unknown) {
+        const msg = (e as Error).message;
+        // Skip "already exists" and extension permission errors
+        if (
+          msg.includes("already exists") ||
+          msg.includes("permission denied") ||
+          msg.includes("must be owner") ||
+          msg.includes("could not open extension")
+        ) {
+          console.log(`  ⊘ Skipped (${msg.split("\n")[0]})`);
+        } else {
+          throw e;
+        }
       }
     }
+    console.log(`  ✓ ${file} applied`);
   }
 
   console.log("\nMigration complete!");

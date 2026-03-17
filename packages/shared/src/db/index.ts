@@ -16,7 +16,12 @@ export function getDb() {
     );
   }
 
-  const pool = new Pool({ connectionString });
+  const pool = new Pool({
+    connectionString,
+    ssl: connectionString.includes("railway.app")
+      ? { rejectUnauthorized: false }
+      : undefined,
+  });
   _db = drizzle(pool, { schema });
   return _db;
 }

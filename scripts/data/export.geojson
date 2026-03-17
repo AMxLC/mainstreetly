@@ -1,0 +1,3815 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-11T13:00:56Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/379199850",
+        "addr:city": "Austin",
+        "addr:housenumber": "3401",
+        "addr:postcode": "78702",
+        "addr:state": "TX",
+        "addr:street": "East 7th Street",
+        "building": "yes",
+        "coa:place_id": "288098",
+        "hairdresser": "barber",
+        "height": "5.1599999999999975",
+        "name": "Wyatt's Barbershop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.703737,
+              30.25713
+            ],
+            [
+              -97.703732,
+              30.257141
+            ],
+            [
+              -97.703869,
+              30.257191
+            ],
+            [
+              -97.703892,
+              30.257144
+            ],
+            [
+              -97.703854,
+              30.25713
+            ],
+            [
+              -97.703903,
+              30.25703
+            ],
+            [
+              -97.703829,
+              30.257003
+            ],
+            [
+              -97.703778,
+              30.257106
+            ],
+            [
+              -97.703753,
+              30.257097
+            ],
+            [
+              -97.703737,
+              30.25713
+            ]
+          ]
+        ]
+      },
+      "id": "way/379199850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/381763952",
+        "addr:housenumber": "5213",
+        "addr:street": "Avenue G",
+        "building": "yes",
+        "height": "6.1",
+        "name": "Salon Sary",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.720329,
+              30.316929
+            ],
+            [
+              -97.720332,
+              30.316925
+            ],
+            [
+              -97.720203,
+              30.316863
+            ],
+            [
+              -97.720152,
+              30.316943
+            ],
+            [
+              -97.720281,
+              30.317004
+            ],
+            [
+              -97.720329,
+              30.316929
+            ]
+          ]
+        ]
+      },
+      "id": "way/381763952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/381774018",
+        "addr:housenumber": "1003",
+        "addr:street": "East 52nd Street",
+        "building": "yes",
+        "height": "5.6",
+        "name": "Bearbrand Barbershop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.711257,
+              30.310896
+            ],
+            [
+              -97.71119,
+              30.310996
+            ],
+            [
+              -97.711218,
+              30.31101
+            ],
+            [
+              -97.711208,
+              30.311025
+            ],
+            [
+              -97.711261,
+              30.311051
+            ],
+            [
+              -97.711265,
+              30.311045
+            ],
+            [
+              -97.711308,
+              30.311067
+            ],
+            [
+              -97.711359,
+              30.31099
+            ],
+            [
+              -97.711309,
+              30.310965
+            ],
+            [
+              -97.711331,
+              30.310933
+            ],
+            [
+              -97.711257,
+              30.310896
+            ]
+          ]
+        ]
+      },
+      "id": "way/381774018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/381824353",
+        "addr:housenumber": "1001",
+        "addr:street": "West 34th Street",
+        "building": "yes",
+        "height": "4.8",
+        "name": "Maine 3 Hair Studio",
+        "phone": "+1 512 451 6267",
+        "shop": "hairdresser",
+        "website": "https://www.mane3hairstudio.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.7449682,
+              30.3026993
+            ],
+            [
+              -97.7450472,
+              30.3025743
+            ],
+            [
+              -97.7449832,
+              30.3025443
+            ],
+            [
+              -97.7449052,
+              30.3026693
+            ],
+            [
+              -97.7449682,
+              30.3026993
+            ]
+          ]
+        ]
+      },
+      "id": "way/381824353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/382444785",
+        "building": "yes",
+        "height": "6.5",
+        "name": "Dandy Hair Co.",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.773114,
+              30.247332
+            ],
+            [
+              -97.773043,
+              30.247443
+            ],
+            [
+              -97.773324,
+              30.24738
+            ],
+            [
+              -97.773242,
+              30.247356
+            ],
+            [
+              -97.773133,
+              30.247303
+            ],
+            [
+              -97.773114,
+              30.247332
+            ]
+          ]
+        ]
+      },
+      "id": "way/382444785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/382498899",
+        "building": "yes",
+        "height": "3.5",
+        "name": "Marshall's Barber Shop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.71909,
+              30.273675
+            ],
+            [
+              -97.719083,
+              30.273675
+            ],
+            [
+              -97.719105,
+              30.27378
+            ],
+            [
+              -97.719209,
+              30.273764
+            ],
+            [
+              -97.719187,
+              30.273659
+            ],
+            [
+              -97.71909,
+              30.273675
+            ]
+          ]
+        ]
+      },
+      "id": "way/382498899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/383378748",
+        "addr:housenumber": "1902",
+        "addr:street": "South Congress Avenue",
+        "building": "yes",
+        "check_date": "2025-02-15",
+        "height": "7.4",
+        "name": "Bird's Barbershop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.751976,
+              30.245107
+            ],
+            [
+              -97.751985,
+              30.245109
+            ],
+            [
+              -97.752028,
+              30.244994
+            ],
+            [
+              -97.751625,
+              30.244881
+            ],
+            [
+              -97.751582,
+              30.244996
+            ],
+            [
+              -97.751976,
+              30.245107
+            ]
+          ]
+        ]
+      },
+      "id": "way/383378748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/383378772",
+        "addr:housenumber": "2004",
+        "addr:street": "South Congress Avenue",
+        "building": "yes",
+        "height": "6.3",
+        "name": "WET",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.752167,
+              30.243881
+            ],
+            [
+              -97.752168,
+              30.243879
+            ],
+            [
+              -97.752061,
+              30.243841
+            ],
+            [
+              -97.752015,
+              30.243938
+            ],
+            [
+              -97.752165,
+              30.243991
+            ],
+            [
+              -97.752188,
+              30.243942
+            ],
+            [
+              -97.7522,
+              30.243946
+            ],
+            [
+              -97.752215,
+              30.243913
+            ],
+            [
+              -97.752197,
+              30.243907
+            ],
+            [
+              -97.7522,
+              30.243902
+            ],
+            [
+              -97.752163,
+              30.243889
+            ],
+            [
+              -97.752167,
+              30.243881
+            ]
+          ]
+        ]
+      },
+      "id": "way/383378772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1208518208",
+        "addr:city": "Austin",
+        "addr:housenumber": "2512",
+        "addr:postcode": "78705",
+        "addr:state": "TX",
+        "addr:street": "Guadalupe Street",
+        "building": "commercial",
+        "name": "iClips",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.741791,
+              30.289578
+            ],
+            [
+              -97.7417948,
+              30.28954
+            ],
+            [
+              -97.741567,
+              30.2895233
+            ],
+            [
+              -97.7415629,
+              30.2895609
+            ],
+            [
+              -97.7415692,
+              30.2895613
+            ],
+            [
+              -97.7417512,
+              30.289575
+            ],
+            [
+              -97.741791,
+              30.289578
+            ]
+          ]
+        ]
+      },
+      "id": "way/1208518208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1354055948",
+        "addr:city": "Austin",
+        "addr:housenumber": "5405",
+        "addr:postcode": "78744",
+        "addr:state": "TX",
+        "addr:street": "South Pleasant Valley Road",
+        "building": "yes",
+        "name": "De Pelos Hair Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.7442704,
+              30.1934417
+            ],
+            [
+              -97.7442673,
+              30.193398
+            ],
+            [
+              -97.7440565,
+              30.1934093
+            ],
+            [
+              -97.7440597,
+              30.1934528
+            ],
+            [
+              -97.7442704,
+              30.1934417
+            ]
+          ]
+        ]
+      },
+      "id": "way/1354055948"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/564528036",
+        "addr:housenumber": "400",
+        "addr:street": "W. Slaughter Lane",
+        "name": "Salon Bali",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.848253,
+          30.1835825
+        ]
+      },
+      "id": "node/564528036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/564535940",
+        "addr:housenumber": "160",
+        "addr:street": "Brodie Lane",
+        "name": "T&S Nails",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.847472,
+          30.1848883
+        ]
+      },
+      "id": "node/564535940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/919339478",
+        "name": "Bird's Barber Shop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7714991,
+          30.2482222
+        ]
+      },
+      "id": "node/919339478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1231748015",
+        "brand": "Supercuts",
+        "brand:wikidata": "Q7643239",
+        "name": "Supercuts",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.743245,
+          30.3943654
+        ]
+      },
+      "id": "node/1231748015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1231748076",
+        "name": "Kisma",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7434973,
+          30.3944869
+        ]
+      },
+      "id": "node/1231748076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1233150920",
+        "addr:housename": "Rockwood Plaza",
+        "addr:street": "Rockwood Ln",
+        "name": "Jamila Salon & Spa",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7382125,
+          30.3583703
+        ]
+      },
+      "id": "node/1233150920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1236793086",
+        "name": "Fadebox Barbershop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7353474,
+          30.3149067
+        ]
+      },
+      "id": "node/1236793086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1249568015",
+        "addr:city": "Austin",
+        "addr:housenumber": "4815",
+        "addr:postcode": "78759",
+        "addr:state": "TX",
+        "addr:street": "W Braker Ln",
+        "addr:unit": "530",
+        "hairdresser": "barber",
+        "name": "Austin Haircut Company",
+        "opening_hours": "Mo-Su 09:00-19:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-512-340-9288",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7481906,
+          30.3999206
+        ]
+      },
+      "id": "node/1249568015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1249568073",
+        "name": "Style America",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.747521,
+          30.3986965
+        ]
+      },
+      "id": "node/1249568073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1251977807",
+        "name": "Styles Hair Studios",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7133275,
+          30.4076327
+        ]
+      },
+      "id": "node/1251977807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1257587362",
+        "addr:city": "Austin",
+        "addr:housenumber": "10515",
+        "addr:postcode": "78759",
+        "addr:state": "TX",
+        "addr:street": "North Mopac Expressway",
+        "addr:unit": "305",
+        "brand": "Floyd's 99 Barbershop",
+        "brand:wikidata": "Q120599645",
+        "name": "Floyd's 99 Barbershop",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00; Su 11:00-18:00",
+        "phone": "+1-512-338-8866",
+        "shop": "hairdresser",
+        "website": "https://www.floydsbarbershop.com/mopac/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7316722,
+          30.3918392
+        ]
+      },
+      "id": "node/1257587362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1257587548",
+        "brand": "Sport Clips",
+        "brand:wikidata": "Q7579310",
+        "name": "Sport Clips",
+        "shop": "hairdresser",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7333049,
+          30.3895991
+        ]
+      },
+      "id": "node/1257587548"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1669910144",
+        "addr:housenumber": "612 B",
+        "addr:postcode": "78705",
+        "addr:street": "West 34th Street",
+        "name": "Cut Loose Hair Salon",
+        "shop": "hairdresser",
+        "website": "http://www.cutlooseaustin.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7400968,
+          30.3009582
+        ]
+      },
+      "id": "node/1669910144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2432574120",
+        "name": "QNails",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7604218,
+          30.4284831
+        ]
+      },
+      "id": "node/2432574120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2527535400",
+        "name": "Jackee's Centerstage Hair Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7195188,
+          30.3511561
+        ]
+      },
+      "id": "node/2527535400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2530278186",
+        "name": "TGF Haircutters",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7465535,
+          30.4020096
+        ]
+      },
+      "id": "node/2530278186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2621843135",
+        "addr:city": "Austin",
+        "addr:housenumber": "911",
+        "addr:postcode": "78757",
+        "addr:state": "TX",
+        "addr:street": "West Anderson Lane",
+        "addr:unit": "118",
+        "name": "Studio Cuts",
+        "opening_hours": "Mo 10:00-16:00; Tu-Sa 10:00-18:00",
+        "phone": "+1-512-420-8410",
+        "shop": "hairdresser",
+        "website": "https://studio-cuts-hair-salon.business.site/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.714839,
+          30.348133
+        ]
+      },
+      "id": "node/2621843135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2653103680",
+        "female": "yes",
+        "name": "MUSE",
+        "opening_hours": "\"By appointment only\"",
+        "shop": "hairdresser",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.9750438,
+          43.6673322
+        ]
+      },
+      "id": "node/2653103680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2653103707",
+        "name": "Adam & Eve Hairstyling",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.975068,
+          43.6670567
+        ]
+      },
+      "id": "node/2653103707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2663954885",
+        "addr:city": "Austin",
+        "addr:housenumber": "12400",
+        "addr:postcode": "78753",
+        "addr:state": "TX",
+        "addr:street": "North Interstate 35",
+        "addr:unit": "A121",
+        "cuisine": "juice",
+        "name": "Kingdom barbershop",
+        "opening_hours": "Mo-Fr 10:00-20:00; Sa 10:00-18:00",
+        "phone": "+1-737-400-8767",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6760185,
+          30.4042646
+        ]
+      },
+      "id": "node/2663954885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2675168099",
+        "addr:city": "Austin",
+        "addr:housenumber": "714",
+        "addr:street": "Brazos Street",
+        "name": "Charlie's Hair Styles",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.741082,
+          30.269119
+        ]
+      },
+      "id": "node/2675168099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2734741557",
+        "addr:city": "Austin",
+        "addr:housenumber": "8650",
+        "addr:postcode": "78759",
+        "addr:state": "TX",
+        "addr:street": "Spicewood Springs Road",
+        "addr:unit": "102",
+        "female:signed": "no",
+        "male:signed": "no",
+        "name": "Hair by Us",
+        "opening_hours": "Tu-Sa 09:00-18:00",
+        "phone": "+1-512-258-2912",
+        "shop": "hairdresser",
+        "website": "https://www.hairbyustx.com/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7717338,
+          30.433198
+        ]
+      },
+      "id": "node/2734741557"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2920762439",
+        "addr:city": "Austin",
+        "addr:housenumber": "1000",
+        "addr:postcode": "78751",
+        "addr:state": "TX",
+        "addr:street": "East 41st Street",
+        "addr:unit": "250",
+        "brand": "Supercuts",
+        "brand:wikidata": "Q7643239",
+        "name": "Supercuts",
+        "opening_hours": "Mo-Sa 09:00-18:00; Su 12:00-17:00",
+        "phone": "+1-512-407-9223",
+        "shop": "hairdresser",
+        "website": "https://www.supercuts.com/locations/tx/austin/hancock-shopping-center-haircuts-81621.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7212159,
+          30.2997689
+        ]
+      },
+      "id": "node/2920762439"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2961537324",
+        "name": "Samuel Rey Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7390798,
+          30.3595549
+        ]
+      },
+      "id": "node/2961537324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3245051658",
+        "addr:city": "Austin",
+        "addr:housenumber": "237",
+        "addr:postcode": "78701",
+        "addr:state": "TX",
+        "addr:street": "West 3rd Street",
+        "female": "yes",
+        "male": "yes",
+        "name": "Finley's Barber Shop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7458194,
+          30.2656684
+        ]
+      },
+      "id": "node/3245051658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3475552330",
+        "addr:city": "Austin",
+        "addr:housenumber": "3202 Ste A",
+        "addr:postcode": "78705",
+        "addr:street": "Guadalupe Street",
+        "name": "Zig Zag Salon",
+        "shop": "hairdresser",
+        "website": "http://zigzagsalon.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7407578,
+          30.2993758
+        ]
+      },
+      "id": "node/3475552330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3849583002",
+        "addr:city": "Austin",
+        "addr:housenumber": "3118",
+        "addr:postcode": "78723",
+        "addr:street": "Manor Road",
+        "name": "Jackson Barbershop",
+        "opening_hours": "Mo-Sa 09:00-19:00; Su 10:00-17:00",
+        "phone": "+1-512-520-5800",
+        "shop": "hairdresser",
+        "website": "https://www.facebook.com/pages/Jackson-Barbershop/471447359711055"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.704751,
+          30.286727
+        ]
+      },
+      "id": "node/3849583002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3852409514",
+        "addr:city": "Cedar Park",
+        "addr:housenumber": "11066",
+        "addr:postcode": "78613",
+        "addr:state": "TX",
+        "addr:street": "Pecan Park Boulevard",
+        "addr:unit": "423",
+        "name": "Creative Cuts",
+        "opening_hours": "Mo-Fr 10:00-19:00; Sa 09:00-18:00; Su 11:00-17:00",
+        "phone": "+1-512-918-0062",
+        "shop": "hairdresser",
+        "website": "http://www.creativecuts.net/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.801425,
+          30.470439
+        ]
+      },
+      "id": "node/3852409514"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3855741555",
+        "addr:city": "Austin",
+        "addr:housenumber": "5212",
+        "addr:postcode": "78751",
+        "addr:state": "TX",
+        "addr:street": "Avenue F",
+        "brand": "Plume Salon",
+        "email": "plumesalonatx@gmail.com",
+        "name": "Plume Salon",
+        "opening_hours": "\"By appointment\"",
+        "operator": "Plume Salon",
+        "parking": "yes",
+        "phone": "+1-512-501-1334",
+        "shop": "hairdresser",
+        "website": "https://plumesalonatx.com",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.721549,
+          30.3173618
+        ]
+      },
+      "id": "node/3855741555"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3857696606",
+        "addr:city": "Austin",
+        "addr:housenumber": "830",
+        "addr:postcode": "78703",
+        "addr:state": "TX",
+        "addr:street": "West 3rd Street",
+        "addr:unit": "1142",
+        "name": "Deseo Salon",
+        "phone": "+1-512-551-2929",
+        "shop": "hairdresser",
+        "website": "https://deseosalon.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7532437,
+          30.268413
+        ]
+      },
+      "id": "node/3857696606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3857696612",
+        "addr:city": "Austin",
+        "addr:housenumber": "830",
+        "addr:postcode": "78703",
+        "addr:state": "TX",
+        "addr:street": "West 3rd Street",
+        "addr:unit": "1140",
+        "name": "Tsunami Salon",
+        "phone": "+1-512-320-0050",
+        "shop": "hairdresser",
+        "website": "http://tsunamisalon.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7533812,
+          30.2684609
+        ]
+      },
+      "id": "node/3857696612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3877228880",
+        "addr:housenumber": "9429",
+        "addr:postcode": "78753",
+        "addr:street": "North Interstate Highway 35 Service Road",
+        "name": "Salon Kimy's",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.686557,
+          30.358376
+        ]
+      },
+      "id": "node/3877228880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3987028198",
+        "addr:city": "Austin",
+        "addr:housenumber": "6807",
+        "addr:postcode": "78752",
+        "addr:state": "TX",
+        "addr:street": "Guadalupe Street",
+        "name": "Luis Corner Barber Shop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7164224,
+          30.3344026
+        ]
+      },
+      "id": "node/3987028198"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4093997756",
+        "check_date": "2025-02-15",
+        "name": "Avenue",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7509822,
+          30.2467268
+        ]
+      },
+      "id": "node/4093997756"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4294415008",
+        "addr:housenumber": "11420",
+        "addr:postcode": "78758",
+        "addr:street": "Rock Rose",
+        "name": "Birds Barbershop",
+        "phone": "+1-512-610-7600",
+        "shop": "hairdresser",
+        "website": "https://birdsbarbershop.com/location/austin-rock-rose/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7231279,
+          30.4006739
+        ]
+      },
+      "id": "node/4294415008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5339602860",
+        "brand": "Regis",
+        "brand:wikidata": "Q7309325",
+        "name": "SmartStyle",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.807722,
+          30.4698292
+        ]
+      },
+      "id": "node/5339602860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5400156522",
+        "addr:city": "Austin",
+        "addr:housenumber": "1212",
+        "addr:postcode": "78753",
+        "addr:state": "TX",
+        "addr:street": "West Parmer Lane",
+        "addr:unit": "C",
+        "name": "DC Haircuts",
+        "opening_hours": "We 10:00-18:00; Th 11:00-18:00; Fr-Mo 10:00-18:00",
+        "phone": "+1-512-490-1684",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6801591,
+          30.4090869
+        ]
+      },
+      "id": "node/5400156522"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5449448024",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7895708,
+          30.4674808
+        ]
+      },
+      "id": "node/5449448024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5771447959",
+        "addr:city": "Austin",
+        "addr:housenumber": "4477",
+        "addr:postcode": "78745",
+        "addr:state": "TX",
+        "addr:street": "South Lamar Boulevard",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00; Su 10:00-18:00",
+        "phone": "+1-512-899-8188",
+        "shop": "hairdresser",
+        "website": "https://salons.greatclips.com/us/tx/austin/4477-s-lamar-blvd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7989706,
+          30.2305222
+        ]
+      },
+      "id": "node/5771447959"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5771772954",
+        "addr:city": "Austin",
+        "addr:housenumber": "5700",
+        "addr:postcode": "78745",
+        "addr:state": "TX",
+        "addr:street": "Manchaca Road",
+        "name": "Austin's Finest Barber Shop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7998201,
+          30.2146977
+        ]
+      },
+      "id": "node/5771772954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6038247090",
+        "name": "HP Hair Designs",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7575314,
+          30.2731069
+        ]
+      },
+      "id": "node/6038247090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6125375328",
+        "brand": "Cost Cutters",
+        "brand:wikidata": "Q62029366",
+        "name": "Cost Cutters",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7924116,
+          30.2338589
+        ]
+      },
+      "id": "node/6125375328"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6334155385",
+        "addr:city": "Austin",
+        "addr:housenumber": "5730",
+        "addr:postcode": "78756",
+        "addr:state": "TX",
+        "addr:street": "Burnet Road",
+        "brand": "Supercuts",
+        "brand:wikidata": "Q7643239",
+        "name": "Supercuts",
+        "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-18:00; Su 11:00-17:00",
+        "phone": "+1-512-458-4144",
+        "shop": "hairdresser",
+        "website": "https://www.supercuts.com/locations/tx/austin/allandale-village-haircuts-8797.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7407947,
+          30.3333825
+        ]
+      },
+      "id": "node/6334155385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6415112246",
+        "name": "Tex-Mex Beauty Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6973128,
+          30.3660726
+        ]
+      },
+      "id": "node/6415112246"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6415112268",
+        "name": "Bob's Barber Shop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.696596,
+          30.3658008
+        ]
+      },
+      "id": "node/6415112268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6455925467",
+        "addr:city": "Austin",
+        "addr:housenumber": "1000",
+        "addr:postcode": "78751",
+        "addr:state": "TX",
+        "addr:street": "East 41st Street",
+        "addr:unit": "L300",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "opening_hours": "Mo-Fr 10:00-19:00; Sa 09:00-18:00; Su 10:00-18:00",
+        "phone": "+1-512-394-5883",
+        "shop": "hairdresser",
+        "website": "https://salons.greatclips.com/us/tx/austin/1000-e-41st-st"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7189613,
+          30.298528
+        ]
+      },
+      "id": "node/6455925467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6480898293",
+        "name": "Tune Up The Manly Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7898537,
+          30.4451844
+        ]
+      },
+      "id": "node/6480898293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6563470021",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7541302,
+          30.3531857
+        ]
+      },
+      "id": "node/6563470021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6564835750",
+        "addr:city": "Austin",
+        "addr:housenumber": "5339",
+        "addr:postcode": "78756",
+        "addr:state": "TX",
+        "addr:street": "Burnet Rd",
+        "description": "Cosmetology School",
+        "name": "Roffler School of Hair Design",
+        "opening_hours": "Mo-Sa 08:00-17:00; PH closed",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:notes": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "phone": "+1-512-458-2620",
+        "shop": "hairdresser",
+        "unisex": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7394028,
+          30.3269997
+        ]
+      },
+      "id": "node/6564835750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6634279007",
+        "addr:housenumber": "6800",
+        "name": "Birds Barbershop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7385612,
+          30.3440886
+        ]
+      },
+      "id": "node/6634279007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6723839743",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.9962217,
+          43.6834818
+        ]
+      },
+      "id": "node/6723839743"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6896967695",
+        "addr:city": "Austin",
+        "addr:housenumber": "3715",
+        "addr:postcode": "78704",
+        "addr:state": "TX",
+        "addr:street": "South 1st Street",
+        "air_conditioning": "yes",
+        "name": "Little Sister Salon / I Love You Pink",
+        "opening_hours": "Mo-Fr 10:00-18:00",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7677628,
+          30.2288094
+        ]
+      },
+      "id": "node/6896967695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6978683117",
+        "addr:city": "Austin",
+        "addr:housenumber": "8650",
+        "addr:postcode": "78759",
+        "addr:state": "TX",
+        "addr:street": "Spicewood Springs Road",
+        "addr:unit": "122",
+        "beauty": "waxing;eyebrow",
+        "name": "The Touch Salon",
+        "phone": "+1-512-917-7128",
+        "shop": "hairdresser",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7711666,
+          30.4320668
+        ]
+      },
+      "id": "node/6978683117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7108322927",
+        "addr:city": "Austin",
+        "addr:housenumber": "13343",
+        "addr:postcode": "78750",
+        "addr:state": "TX",
+        "addr:street": "US Highway 183 North",
+        "addr:unit": "400",
+        "name": "Salon Republic",
+        "shop": "hairdresser",
+        "website": "https://salonrepublic.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7855793,
+          30.4458338
+        ]
+      },
+      "id": "node/7108322927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7287247422",
+        "addr:city": "Austin",
+        "addr:housenumber": "12407",
+        "addr:postcode": "78758",
+        "addr:state": "TX",
+        "addr:street": "North MoPac Expressway",
+        "addr:unit": "125-B",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "opening_hours": "Mo-Fr 09:00-21:00; Sa 09:00-18:00; Su 10:00-18:00",
+        "phone": "+1-512-719-3196",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7042275,
+          30.4172988
+        ]
+      },
+      "id": "node/7287247422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8067353600",
+        "name": "Hair It Is",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7469245,
+          30.408191
+        ]
+      },
+      "id": "node/8067353600"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8121425315",
+        "addr:city": "Austin",
+        "addr:housenumber": "2826",
+        "addr:postcode": "78705",
+        "addr:state": "TX",
+        "addr:street": "Rio Grande Street",
+        "addr:unit": "A",
+        "female": "yes",
+        "name": "Jodie's Coiffures",
+        "opening_hours:covid19": "restricted",
+        "phone": "+1-512-478-0587",
+        "shop": "hairdresser",
+        "website": "https://www.facebook.com/JodiesCoiffures/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7441504,
+          30.2955995
+        ]
+      },
+      "id": "node/8121425315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8178233809",
+        "addr:housenumber": "110",
+        "addr:street": "San Antonio Street",
+        "addr:unit": "130",
+        "name": "Janet St. Paul Studio for Hair and Beauty",
+        "phone": "+1-512-474-5000",
+        "shop": "hairdresser",
+        "website": "https://janetstpaul.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7495546,
+          30.2656871
+        ]
+      },
+      "id": "node/8178233809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8185748762",
+        "name": "Dry Society Styling Lounge",
+        "phone": "+1-512-906-0759",
+        "shop": "hairdresser",
+        "website": "https://www.drysocietystylinglounge.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7225792,
+          30.3907146
+        ]
+      },
+      "id": "node/8185748762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8220261375",
+        "addr:city": "Austin",
+        "addr:housenumber": "211",
+        "addr:postcode": "78701",
+        "addr:state": "TX",
+        "addr:street": "Walter Seaholm Drive",
+        "name": "Ruiz Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7526443,
+          30.2673902
+        ]
+      },
+      "id": "node/8220261375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282179041",
+        "addr:city": "Austin",
+        "addr:housenumber": "3202",
+        "addr:postcode": "78757",
+        "addr:state": "TX",
+        "addr:street": "West Anderson Lane",
+        "addr:unit": "206",
+        "name": "Salon Vela",
+        "opening_hours": "Tu 14:00-20:00; We-Su 08:00-20:00",
+        "phone": "+1-512-452-8352",
+        "shop": "hairdresser",
+        "website": "https://salonvela.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7413961,
+          30.3621481
+        ]
+      },
+      "id": "node/8282179041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282328951",
+        "addr:city": "Austin",
+        "addr:housenumber": "2900",
+        "addr:postcode": "78757",
+        "addr:state": "TX",
+        "addr:street": "West Anderson Lane",
+        "addr:unit": "300",
+        "name": "Empire Hair Co.",
+        "opening_hours": "Tu-Fr 10:00-18:00; Sa 10:00-15:00",
+        "phone": "+1-512-565-4447",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.737226,
+          30.3602633
+        ]
+      },
+      "id": "node/8282328951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8285639162",
+        "addr:city": "Austin",
+        "addr:housenumber": "8312",
+        "addr:postcode": "78757",
+        "addr:state": "TX",
+        "addr:street": "Burnet Road",
+        "addr:unit": "110",
+        "name": "Zig Zag Salon",
+        "opening_hours": "Tu-We 10:00-18:00; Th-Fr 10:00-21:00; Sa 10:00-17:00",
+        "phone": "+1-512-467-9774",
+        "shop": "hairdresser",
+        "website": "http://www.zigzagsalon.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7295349,
+          30.3639327
+        ]
+      },
+      "id": "node/8285639162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8285639166",
+        "addr:city": "Austin",
+        "addr:housenumber": "8312",
+        "addr:postcode": "78757",
+        "addr:state": "TX",
+        "addr:street": "Burnet Road",
+        "addr:unit": "111",
+        "name": "Hair By Jose Salon",
+        "opening_hours": "Mo-Fr 10:30-19:00; Sa 10:00-16:00",
+        "phone": "+1-512-454-1708",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7295627,
+          30.3639426
+        ]
+      },
+      "id": "node/8285639166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8301648733",
+        "addr:city": "Austin",
+        "addr:housenumber": "7113",
+        "addr:postcode": "78757",
+        "addr:street": "Woodrow Avenue",
+        "female": "yes",
+        "male": "yes",
+        "name": "Crestview Barber Shop",
+        "opening_hours": "Tu 10:00-17:30; We 11:00-18:30; Th 10:00-17:30; Fr 10:00-17:30; Sa 09:00-15:00",
+        "phone": "+1-512-451-2887",
+        "shop": "hairdresser",
+        "website": "https://crestviewbarbershop.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7254445,
+          30.3428277
+        ]
+      },
+      "id": "node/8301648733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8301648734",
+        "addr:city": "Austin",
+        "addr:housenumber": "7111",
+        "addr:postcode": "78757",
+        "addr:street": "Woodrow Avenue",
+        "check_date:opening_hours": "2023-03-28",
+        "female": "yes",
+        "name": "Crestview Beauty Salon",
+        "opening_hours": "Tu 09:00-17:00; We 11:00-19:00; Th-Fr 09:00-17:00; Sa 09:00-15:00",
+        "opening_hours:signed": "no",
+        "phone": "+1-512-453-1561",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7254682,
+          30.3427775
+        ]
+      },
+      "id": "node/8301648734"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8319951579",
+        "addr:city": "Austin",
+        "addr:housenumber": "12901",
+        "addr:postcode": "78753",
+        "addr:state": "TX",
+        "addr:street": "North Interstate 35",
+        "addr:unit": "1520",
+        "brand": "Supercuts",
+        "brand:wikidata": "Q7643239",
+        "check_date": "2025-12-18",
+        "name": "Supercuts",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00; Su 11:00-17:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-512-252-9041",
+        "shop": "hairdresser",
+        "website": "https://www.supercuts.com/locations/tx/austin/shops-at-tech-ridge-haircuts-80412.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6719921,
+          30.4161656
+        ]
+      },
+      "id": "node/8319951579"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8326152378",
+        "addr:city": "Austin",
+        "addr:housenumber": "13000",
+        "addr:postcode": "78753",
+        "addr:state": "TX",
+        "addr:street": "North Interstate 35",
+        "addr:unit": "214",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "opening_hours": "Mo-Fr 10:00-19:00; Sa 09:00-18:00; Su 10:00-18:00",
+        "phone": "+1-512-833-6536",
+        "shop": "hairdresser",
+        "website": "https://salons.greatclips.com/us/tx/austin/13000-n-ih-35"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6760259,
+          30.411211
+        ]
+      },
+      "id": "node/8326152378"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8336335009",
+        "addr:city": "Austin",
+        "addr:housenumber": "11220",
+        "addr:postcode": "78753",
+        "addr:state": "TX",
+        "addr:street": "North Lamar Boulevard",
+        "addr:unit": "B201",
+        "name": "Salon IVO",
+        "opening_hours": "Mo-Sa 09:00-19:00",
+        "phone": "+1-512-836-6688",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6876992,
+          30.3821189
+        ]
+      },
+      "id": "node/8336335009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8336386481",
+        "addr:city": "Austin",
+        "addr:housenumber": "1200",
+        "addr:postcode": "78758",
+        "addr:state": "TX",
+        "addr:street": "Kramer Lane",
+        "addr:unit": "2",
+        "name": "Emylin Hair Salon",
+        "opening_hours": "Mo-Sa 10:00-19:00; Su 10:00-18:00",
+        "phone": "+1-512-822-9680",
+        "shop": "hairdresser",
+        "website": "https://emylinhairsalon.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6943873,
+          30.3829953
+        ]
+      },
+      "id": "node/8336386481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8363087457",
+        "addr:city": "Austin",
+        "addr:housenumber": "3909",
+        "addr:postcode": "78722",
+        "addr:state": "TX",
+        "addr:street": "North Interstate 35",
+        "addr:unit": "E-4",
+        "name": "Kervin's Barber Shop",
+        "opening_hours": "Tu-We 07:00-18:00; Th-Fr 07:00-19:00; Sa 07:00-16:00",
+        "phone": "+1-512-453-2991",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7173439,
+          30.2957424
+        ]
+      },
+      "id": "node/8363087457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8373507403",
+        "addr:city": "Austin",
+        "addr:housenumber": "1801",
+        "addr:postcode": "78723",
+        "addr:state": "TX",
+        "addr:street": "East 51st Street",
+        "addr:unit": "A-120",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "female": "yes",
+        "male": "yes",
+        "name": "Great Clips",
+        "opening_hours": "Mo-Fr 08:30-19:30; Sa 09:00-18:00; Su 10:00-18:00",
+        "phone": "+1-512-480-0605",
+        "shop": "hairdresser",
+        "website": "https://salons.greatclips.com/us/tx/austin/1801-e-51st-st"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6995598,
+          30.3015455
+        ]
+      },
+      "id": "node/8373507403"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8374005099",
+        "addr:city": "Austin",
+        "addr:housenumber": "5025",
+        "addr:postcode": "78723",
+        "addr:state": "TX",
+        "addr:street": "Manor Road",
+        "name": "My Salon",
+        "opening_hours": "Mo-Fr 10:00-21:00; Sa-Su 09:00-21:00",
+        "phone": "+1-512-470-8277",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6870138,
+          30.2975094
+        ]
+      },
+      "id": "node/8374005099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8397911135",
+        "addr:city": "Austin",
+        "addr:housenumber": "2500",
+        "addr:postcode": "78727",
+        "addr:state": "TX",
+        "addr:street": "West Parmer Lane",
+        "addr:unit": "150",
+        "brand": "Supercuts",
+        "brand:wikidata": "Q7643239",
+        "name": "Supercuts",
+        "opening_hours": "Mo-Sa 09:00-18:00; Su 12:00-17:00",
+        "phone": "+1-512-255-5881",
+        "shop": "hairdresser",
+        "website": "https://www.supercuts.com/locations/tx/austin/parmer-crossing-haircuts-8795.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7023548,
+          30.4220426
+        ]
+      },
+      "id": "node/8397911135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8436308407",
+        "addr:city": "Austin",
+        "addr:housenumber": "4410",
+        "addr:postcode": "78741",
+        "addr:state": "TX",
+        "addr:street": "East Riverside Drive",
+        "addr:unit": "140",
+        "brand": "Supercuts",
+        "brand:wikidata": "Q7643239",
+        "name": "Supercuts",
+        "phone": "+1-512-385-4972",
+        "shop": "hairdresser",
+        "website": "https://www.supercuts.com/locations/tx/austin/parke-green-haircuts-8522.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7211292,
+          30.2336376
+        ]
+      },
+      "id": "node/8436308407"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8492216679",
+        "addr:city": "Austin",
+        "addr:housenumber": "1200",
+        "addr:postcode": "78702",
+        "addr:state": "TX",
+        "addr:street": "East 11th Street",
+        "addr:unit": "102",
+        "name": "Modesty Hair Studio",
+        "phone": "+1-512-628-0750",
+        "shop": "hairdresser",
+        "website": "https://www.modestyhairstudio.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7275438,
+          30.2687254
+        ]
+      },
+      "id": "node/8492216679"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8505618905",
+        "addr:city": "Austin",
+        "addr:housenumber": "14900",
+        "addr:postcode": "78717",
+        "addr:state": "TX",
+        "addr:street": "Avery Ranch Boulevard",
+        "addr:unit": "B-600",
+        "brand": "Cost Cutters",
+        "brand:wikidata": "Q62029366",
+        "name": "Cost Cutters",
+        "opening_hours": "Mo-Sa 09:00-18:00; Su 11:00-17:00",
+        "phone": "+1-512-687-0429",
+        "shop": "hairdresser",
+        "website": "https://www.costcutters.com/locations/tx/austin/the-plaza-at-avery-ranch-haircuts-17201.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7773251,
+          30.498786
+        ]
+      },
+      "id": "node/8505618905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8505725307",
+        "addr:city": "Austin",
+        "addr:housenumber": "10621",
+        "addr:postcode": "78717",
+        "addr:state": "TX",
+        "addr:street": "West Parmer Lane",
+        "addr:unit": "102",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "opening_hours:covid19": "Mo 09:00-20:00; Tu-Th 09:00-17:00; Fr 09:00-20:00; Sa 09:00-18:00; Su 09:00-17:00",
+        "phone": "+1-512-218-0030",
+        "shop": "hairdresser",
+        "website": "https://salons.greatclips.com/us/tx/austin/10621-w-parmer-ln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7770159,
+          30.499515
+        ]
+      },
+      "id": "node/8505725307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8507925312",
+        "addr:city": "Austin",
+        "addr:housenumber": "10526",
+        "addr:postcode": "78717",
+        "addr:state": "TX",
+        "addr:street": "West Parmer Lane",
+        "addr:unit": "507",
+        "name": "Finley's Barbershop Avery Ranch",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-17:00; Su 12:00-18:00",
+        "phone": "+1-512-401-3689",
+        "shop": "hairdresser",
+        "website": "https://finleysbarbershop.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7734964,
+          30.497289
+        ]
+      },
+      "id": "node/8507925312"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8508199347",
+        "addr:city": "Austin",
+        "addr:housenumber": "10526",
+        "addr:postcode": "78717",
+        "addr:state": "TX",
+        "addr:street": "West Parmer Lane",
+        "addr:unit": "419",
+        "description": "Text-only phone number +1-512-467-4717",
+        "email": "blondefaithappointments@gmail.com",
+        "name": "Blonde Faith Salon",
+        "opening_hours": "Mo-Sa 09:00-21:00",
+        "shop": "hairdresser",
+        "website": "https://www.blondefaithsalon.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7734726,
+          30.4984303
+        ]
+      },
+      "id": "node/8508199347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8515697160",
+        "addr:city": "Cedar Park",
+        "addr:housenumber": "14028",
+        "addr:postcode": "78717",
+        "addr:state": "TX",
+        "addr:street": "183A Toll Road",
+        "addr:unit": "320",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-19:00; Su 10:00-18:00",
+        "phone": "+1-512-331-0412",
+        "shop": "hairdresser",
+        "website": "https://salons.greatclips.com/us/tx/austin/14028-n-us-183"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8046447,
+          30.476363
+        ]
+      },
+      "id": "node/8515697160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8526296315",
+        "addr:city": "Cedar Park",
+        "addr:housenumber": "11066",
+        "addr:postcode": "78613",
+        "addr:state": "TX",
+        "addr:street": "Pecan Park Boulevard",
+        "addr:unit": "D-415",
+        "name": "Sharkey's Cuts for Kids",
+        "note": "I couldn't find hours listed on their website.",
+        "phone": "+1-512-257-1957",
+        "shop": "hairdresser",
+        "website": "https://www.sharkeyscutsforkidscedarpark.com/book1599514503076"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8013929,
+          30.4706676
+        ]
+      },
+      "id": "node/8526296315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8526378237",
+        "addr:city": "Cedar Park",
+        "addr:housenumber": "11066",
+        "addr:postcode": "78613",
+        "addr:state": "TX",
+        "addr:street": "Pecan Park Boulevard",
+        "addr:unit": "530",
+        "fixme": "I was unable to find much information on this hair salon online and what I did find looked as if it might have been out of date.  Could someone confirm whether this business is still in operation?",
+        "name": "Salon by LBS",
+        "phone": "+1-512-382-7446",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8009439,
+          30.4705007
+        ]
+      },
+      "id": "node/8526378237"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8534849708",
+        "addr:city": "Austin",
+        "addr:housenumber": "11301",
+        "addr:postcode": "78717",
+        "addr:state": "TX",
+        "addr:street": "Lakeline Boulevard",
+        "addr:unit": "320",
+        "brand": "Sport Clips",
+        "brand:wikidata": "Q7579310",
+        "name": "Sport Clips",
+        "opening_hours": "Mo-Fr 10:00-18:00; Sa 08:00-18:00; Su 10:00-17:00",
+        "phone": "+1-512-918-8756",
+        "safety:mask:covid19": "yes",
+        "shop": "hairdresser",
+        "website": "https://haircutmenlakelineaustintx.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8002352,
+          30.477994
+        ]
+      },
+      "id": "node/8534849708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8612211034",
+        "addr:city": "Austin",
+        "addr:housenumber": "10901",
+        "addr:postcode": "78753",
+        "addr:state": "TX",
+        "addr:street": "North Lamar Boulevard",
+        "addr:unit": "B-205",
+        "email": "info@silkcuthairsalon.com",
+        "name": "Silkcut Hair Salon",
+        "opening_hours": "Mo-Fr 09:30-19:30; Sa 09:00-19:00; Su 11:30-17:30",
+        "phone": "+1-512-835-8600",
+        "shop": "hairdresser",
+        "website": "http://chinatownaustin.com/portfolio/silk-cut-hair-salon/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6867903,
+          30.3790053
+        ]
+      },
+      "id": "node/8612211034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8612419141",
+        "addr:city": "Austin",
+        "addr:housenumber": "10901",
+        "addr:postcode": "78753",
+        "addr:state": "TX",
+        "addr:street": "North Lamar Boulevard",
+        "addr:unit": "D-403",
+        "name": "MAX Line",
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "phone": "+1-512-490-0909",
+        "shop": "hairdresser",
+        "website": "http://chinatownaustin.com/portfolio/max-line-beauty-salon/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6862725,
+          30.3787316
+        ]
+      },
+      "id": "node/8612419141"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8612782517",
+        "addr:city": "Austin",
+        "addr:housenumber": "10901",
+        "addr:postcode": "78753",
+        "addr:state": "TX",
+        "addr:street": "North Lamar Boulevard",
+        "addr:unit": "C-306",
+        "name": "Kelly's Hair Studio",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "phone": "+1-512-873-8888",
+        "shop": "hairdresser",
+        "website": "http://chinatownaustin.com/portfolio/kellys-hair-studio/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6865659,
+          30.3774834
+        ]
+      },
+      "id": "node/8612782517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8616051609",
+        "addr:city": "Austin",
+        "addr:housenumber": "11800",
+        "addr:postcode": "78758",
+        "addr:state": "TX",
+        "addr:street": "North Lamar Boulevard",
+        "addr:unit": "5-A",
+        "name": "JC Barber Shop",
+        "shop": "hairdresser",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6840826,
+          30.3883725
+        ]
+      },
+      "id": "node/8616051609"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8858558304",
+        "addr:city": "Austin",
+        "addr:housenumber": "202",
+        "addr:postcode": "78701",
+        "addr:state": "TX",
+        "addr:street": "Colorado Street",
+        "addr:unit": "913",
+        "brand": "Drybar",
+        "brand:wikidata": "Q18352685",
+        "female": "yes",
+        "name": "Drybar",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7455919,
+          30.2650592
+        ]
+      },
+      "id": "node/8858558304"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8991620972",
+        "addr:city": "Austin",
+        "addr:housenumber": "43",
+        "addr:postcode": "78701",
+        "addr:state": "TX",
+        "addr:street": "Rainey Street",
+        "name": "Roar",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7396048,
+          30.2562065
+        ]
+      },
+      "id": "node/8991620972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9231041276",
+        "addr:city": "Austin",
+        "addr:housenumber": "4404",
+        "addr:postcode": "78749",
+        "addr:state": "TX",
+        "addr:street": "West William Cannon Drive",
+        "addr:unit": "Suite F",
+        "air_conditioning": "yes",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+1-512-899-3105",
+        "shop": "hairdresser",
+        "stroller": "yes",
+        "website": "https://salons.greatclips.com/us/tx/austin/4404-w-william-cannon-dr",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8392398,
+          30.2238271
+        ]
+      },
+      "id": "node/9231041276"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9968734817",
+        "addr:city": "Austin",
+        "addr:housenumber": "2121",
+        "addr:postcode": "78727",
+        "addr:state": "TX",
+        "addr:street": "West Parmer Lane",
+        "addr:unit": "102C",
+        "air_conditioning": "yes",
+        "check_date": "2023-10-06",
+        "name": "MC Hair Cuts",
+        "phone": "+1-512-719-1188",
+        "shop": "hairdresser",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6965637,
+          30.4153465
+        ]
+      },
+      "id": "node/9968734817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10231030325",
+        "addr:city": "Austin",
+        "addr:housenumber": "9600 F",
+        "addr:postcode": "78749",
+        "addr:state": "TX",
+        "addr:street": "Escarpment Blvd",
+        "addr:unit": "715",
+        "air_conditioning": "yes",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "female": "yes",
+        "male": "yes",
+        "name": "Great Clips",
+        "opening_hours": "Mo-Fr 09:00-21:00, Sa-Su 09:00-18:00",
+        "phone": "+1-512-288-2444",
+        "shop": "hairdresser",
+        "website": "https://salons.greatclips.com/us/tx/austin/9600-escarpment-blvd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8788391,
+          30.2027089
+        ]
+      },
+      "id": "node/10231030325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10253623574",
+        "addr:city": "Austin",
+        "addr:housenumber": "110",
+        "addr:postcode": "78752",
+        "addr:state": "TX",
+        "addr:street": "Jacob Fontaine Lane",
+        "addr:unit": "500",
+        "female": "yes",
+        "male": "yes",
+        "name": "Apotheca Salon & Barbershop",
+        "phone": "+1-737-336-0136",
+        "shop": "hairdresser",
+        "website": "https://www.apothecaatx.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7149352,
+          30.3268909
+        ]
+      },
+      "id": "node/10253623574"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10292354426",
+        "addr:city": "Austin",
+        "addr:housenumber": "9600 H",
+        "addr:postcode": "78749",
+        "addr:state": "TX",
+        "addr:street": "Escarpment Boulevard",
+        "addr:unit": "920",
+        "female": "yes",
+        "name": "Maximum FX Salon",
+        "opening_hours": "Mo 09:00-18:00; Tu-Fr 08:00-21:00; Sa 09:00-18:00; Su off",
+        "phone": "+1-512-637-0888",
+        "shop": "hairdresser",
+        "website": "https://www.maximumfx.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8791948,
+          30.2038901
+        ]
+      },
+      "id": "node/10292354426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10295433254",
+        "addr:city": "Austin",
+        "addr:housenumber": "1621",
+        "addr:postcode": "78702",
+        "addr:state": "TX",
+        "addr:street": "East 6th Street",
+        "addr:unit": "1104",
+        "check_date:opening_hours": "2025-04-03",
+        "female:signed": "no",
+        "male:signed": "no",
+        "name": "Ārdeō Color Studio",
+        "opening_hours:signed": "no",
+        "phone": "+1-512-551-3958",
+        "shop": "hairdresser",
+        "website": "https://www.ardeocolorstudio.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.725738,
+          30.2626483
+        ]
+      },
+      "id": "node/10295433254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10301491451",
+        "addr:city": "Austin",
+        "addr:housenumber": "4524",
+        "addr:postcode": "78723",
+        "addr:state": "TX",
+        "addr:street": "Mattie Street",
+        "addr:unit": "102",
+        "name": "Olde Soul Barbershop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7040406,
+          30.2980063
+        ]
+      },
+      "id": "node/10301491451"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10312971672",
+        "addr:city": "Austin",
+        "addr:postcode": "78745",
+        "addr:state": "TX",
+        "addr:street": "West Stassney Lane",
+        "check_date": "2023-01-07",
+        "currency:XBT": "yes",
+        "description": "Barber",
+        "email": "sabarbershop@gmail.com",
+        "male": "yes",
+        "name": "South Austin Barber Shop",
+        "opening_hours": "Mo-Fr 09:00-19:00, Sa 09:00-17:00",
+        "payment:lightning": "yes",
+        "payment:lightning_contactless": "no",
+        "payment:onchain": "no",
+        "phone": "+1-512-767-3245",
+        "shop": "hairdresser",
+        "website": "https://www.southaustinbarbershop.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7810866,
+          30.2077145
+        ]
+      },
+      "id": "node/10312971672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10563449919",
+        "addr:city": "Austin",
+        "addr:country": "US",
+        "addr:housenumber": "3601",
+        "addr:postcode": "78749",
+        "addr:state": "TX",
+        "addr:street": "West William Cannon Drive",
+        "addr:unit": "100",
+        "name": "Birds Barbershop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8332815,
+          30.2152513
+        ]
+      },
+      "id": "node/10563449919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10563618406",
+        "addr:city": "Austin",
+        "addr:housenumber": "1100",
+        "addr:postcode": "78704",
+        "addr:state": "TX",
+        "addr:street": "South Lamar Boulevard",
+        "addr:unit": "2135",
+        "check_date": "2025-02-16",
+        "name": "The Collective ATX Salon",
+        "phone": "+1-512-712-4999",
+        "shop": "hairdresser",
+        "website": "https://www.thecollectiveatx.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7626515,
+          30.2558949
+        ]
+      },
+      "id": "node/10563618406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10563623213",
+        "addr:city": "Austin",
+        "addr:housenumber": "1100",
+        "addr:postcode": "78704",
+        "addr:state": "TX",
+        "addr:street": "South Lamar Boulevard",
+        "addr:unit": "1110",
+        "brand": "Finley's Barbershop",
+        "female:signed": "no",
+        "image": "https://osm-img.piperswe.me/20250328_0145.jpg",
+        "male:signed": "no",
+        "name": "Finley's Barbershop",
+        "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-17:00; Su 12:00-18:00",
+        "phone": "+1-512-401-3689",
+        "shop": "hairdresser",
+        "website": "https://finleysbarbershop.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7623148,
+          30.2550657
+        ]
+      },
+      "id": "node/10563623213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10584706729",
+        "female": "yes",
+        "male": "yes",
+        "name": "Birds Barborshop",
+        "opening_hours": "Mo-Su 09:00-19:00",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8648227,
+          30.2008139
+        ]
+      },
+      "id": "node/10584706729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10656061870",
+        "addr:city": "Austin",
+        "addr:housenumber": "3421",
+        "addr:postcode": "78745",
+        "addr:state": "TX",
+        "addr:street": "West William Cannon Drive",
+        "addr:unit": "123",
+        "name": "The Look",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8302797,
+          30.2126843
+        ]
+      },
+      "id": "node/10656061870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10752019061",
+        "brand": "Supercuts",
+        "brand:wikidata": "Q7643239",
+        "name": "Supercuts",
+        "shop": "hairdresser",
+        "unisex": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7550468,
+          30.3547322
+        ]
+      },
+      "id": "node/10752019061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10889875292",
+        "male": "yes",
+        "name": "Kane's Barber Shop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.695952,
+          30.2660438
+        ]
+      },
+      "id": "node/10889875292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10892393872",
+        "name": "3 Kings Barber Shop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7274496,
+          30.3955732
+        ]
+      },
+      "id": "node/10892393872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10900385265",
+        "female:signed": "no",
+        "male:signed": "no",
+        "name": "3-Kings Barber Shop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7201382,
+          30.3353705
+        ]
+      },
+      "id": "node/10900385265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10911306660",
+        "female": "yes",
+        "name": "Tierra Caliente",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6959764,
+          30.2661701
+        ]
+      },
+      "id": "node/10911306660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11082444042",
+        "addr:city": "Austin",
+        "addr:housenumber": "7600",
+        "addr:postcode": "78752",
+        "addr:state": "TX",
+        "addr:street": "North Lamar Boulevard",
+        "addr:unit": "C",
+        "name": "Maria Bonita Hair Salon",
+        "opening_hours": "Mo-Sa 10:00-19:00, Su 11:00-16:00",
+        "phone": "+1-542-459-5555",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.715186,
+          30.3444529
+        ]
+      },
+      "id": "node/11082444042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11082444045",
+        "addr:city": "Austin",
+        "addr:housenumber": "7601",
+        "addr:postcode": "78752",
+        "addr:state": "TX",
+        "addr:street": "North Lamar Boulevard",
+        "name": "LJ Barber SHop",
+        "opening_hours": "Tu-Sa 09:00-19:00",
+        "phone": "+1-512-680-9870",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7141785,
+          30.3439332
+        ]
+      },
+      "id": "node/11082444045"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11083906195",
+        "addr:city": "Austin",
+        "addr:housenumber": "6929",
+        "addr:postcode": "78752",
+        "addr:state": "TX",
+        "addr:street": "Airport Boulevard",
+        "addr:unit": "150",
+        "name": "Windy Hair Salon",
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "phone": "+1-512-608-1170",
+        "shop": "hairdresser",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7166829,
+          30.3365001
+        ]
+      },
+      "id": "node/11083906195"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11173172873",
+        "addr:city": "Austin",
+        "addr:housenumber": "1611",
+        "addr:postcode": "78703",
+        "addr:state": "TX",
+        "addr:street": "West 5th Street",
+        "addr:unit": "145",
+        "name": "Blo Blow Dry Bar",
+        "shop": "hairdresser",
+        "website": "https://blomedry.com/fifth-street-austin-tx/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7641519,
+          30.2741279
+        ]
+      },
+      "id": "node/11173172873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11192190240",
+        "addr:housenumber": "800",
+        "addr:street": "West 3rd Street",
+        "addr:unit": "1308",
+        "name": "Wild Orchid Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7519471,
+          30.2679249
+        ]
+      },
+      "id": "node/11192190240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11244809142",
+        "addr:city": "Austin",
+        "addr:housenumber": "2006",
+        "addr:postcode": "78727",
+        "addr:state": "TX",
+        "addr:street": "West Parmer Lane",
+        "addr:unit": "B",
+        "air_conditioning": "yes",
+        "check_date": "2023-10-06",
+        "contact:facebook": "https://www.facebook.com/SilveradoHairSalon/",
+        "email": "silverado_hair@yahoo.com",
+        "name": "Claudia's Hair Salon",
+        "opening_hours": "Mo-Fr 09:30-19:00; Sa 09:00-18:00",
+        "phone": "+1-512-260-2566",
+        "shop": "hairdresser",
+        "unisex": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6950891,
+          30.415944
+        ]
+      },
+      "id": "node/11244809142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11330180362",
+        "addr:housenumber": "7811",
+        "addr:street": "South 1st Street",
+        "name": "Fast Freddy's",
+        "phone": "+1-512-447-0055",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7919003,
+          30.1841287
+        ]
+      },
+      "id": "node/11330180362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11330188027",
+        "addr:housenumber": "623-A",
+        "addr:street": "West Dittmar Road",
+        "name": "Barber To The People",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7920355,
+          30.1834682
+        ]
+      },
+      "id": "node/11330188027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11336007597",
+        "name": "Salon De Belleza",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6860507,
+          30.356642
+        ]
+      },
+      "id": "node/11336007597"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11336007600",
+        "name": "Sue's Place Barber & Beauty",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6865667,
+          30.3568066
+        ]
+      },
+      "id": "node/11336007600"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11336007608",
+        "name": "Ebony Beauty Mart",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6877771,
+          30.3565379
+        ]
+      },
+      "id": "node/11336007608"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11336007612",
+        "name": "Layo's Hair Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6854019,
+          30.357449
+        ]
+      },
+      "id": "node/11336007612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11351313658",
+        "name": "Xtreme Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6796257,
+          30.3304626
+        ]
+      },
+      "id": "node/11351313658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11369993976",
+        "addr:city": "Austin",
+        "addr:housenumber": "4631",
+        "addr:postcode": "78751",
+        "addr:state": "TX",
+        "addr:street": "Airport Boulevard",
+        "addr:unit": "119",
+        "air_conditioning": "yes",
+        "branch": "Hyde Park",
+        "check_date": "2023-11-22",
+        "contact:facebook": "https://www.facebook.com/shedbarber/",
+        "email": "shed@shedbarber.com",
+        "female": "yes",
+        "male": "yes",
+        "name": "SHED Barber and Supply - Hyde Park",
+        "opening_hours": "Mo-Fr 10:00-19:00; Sa-Su 09:00-18:00 open \"Open by appointment only\"",
+        "shop": "hairdresser",
+        "website": "https://shedbarber.com",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7150494,
+          30.3061952
+        ]
+      },
+      "id": "node/11369993976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11392689884",
+        "addr:city": "Austin",
+        "addr:housenumber": "9500",
+        "addr:postcode": "78748",
+        "addr:state": "TX",
+        "addr:street": "S IH-35",
+        "addr:unit": "E-200",
+        "male": "yes",
+        "name": "Olde Soul Barbershop",
+        "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-16:00; PH closed",
+        "shop": "hairdresser",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.79131,
+          30.1626209
+        ]
+      },
+      "id": "node/11392689884"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11700417495",
+        "addr:city": "Austin",
+        "addr:housenumber": "301",
+        "addr:postcode": "78702",
+        "addr:state": "TX",
+        "addr:street": "Chicon St Unit E",
+        "description": "Precision Decision Hair Group offers expert styling, coloring, and treatments for all hair types. Discover our skilled professionals dedicated to delivering personalized services for your perfect hair transformation. Book your appointment now!\"",
+        "email": "precisiondecisionhair@gmail.com",
+        "name": "Precision Decision Hair Group",
+        "opening_hours": "Mo-Fr 10:00-19:00, Sa-Su 10:00-16:00",
+        "operator": "Maddye Chastain",
+        "phone": "+1-512-551-9797",
+        "shop": "hairdresser",
+        "website": "https://precisiondecisionhair.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7235382,
+          30.2590924
+        ]
+      },
+      "id": "node/11700417495"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11808981986",
+        "addr:city": "Austin",
+        "addr:housenumber": "1717",
+        "addr:postcode": "78703",
+        "addr:state": "TX",
+        "addr:street": "West 6th Street",
+        "addr:unit": "130R",
+        "level": "0",
+        "name": "The Good Life",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7657553,
+          30.2761943
+        ]
+      },
+      "id": "node/11808981986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12184594003",
+        "addr:postcode": "78745",
+        "name": "Adolph's Barbershop",
+        "opening_hours": "Tu-Fr 07:30-17:00; Sa 07:30-16:00",
+        "outdoor_seating": "no",
+        "phone": "+1-512-444-9153",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7877432,
+          30.2289966
+        ]
+      },
+      "id": "node/12184594003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12433956493",
+        "addr:city": "Austin",
+        "addr:housenumber": "3016",
+        "addr:postcode": "78705",
+        "addr:state": "TX",
+        "addr:street": "Guadalupe Street",
+        "addr:unit": "B100",
+        "name": "Smooshine Hair Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7416753,
+          30.297445
+        ]
+      },
+      "id": "node/12433956493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12552029341",
+        "name": "Hair City Beauty Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7153775,
+          30.3617057
+        ]
+      },
+      "id": "node/12552029341"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12705556807",
+        "addr:unit": "115",
+        "contact:facebook": "oldesoul_barbershop",
+        "hairdresser": "barber",
+        "name": "Olde Soul Barbershop",
+        "opening_hours": "Mo,We,Fr,Sa 09:00-18:00; Tu,Th 09:00-19:00; Su off",
+        "phone": "+1-512-402-2523",
+        "shop": "hairdresser",
+        "website": "https://oldesoulbarbershop.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7252766,
+          30.2627303
+        ]
+      },
+      "id": "node/12705556807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12707863543",
+        "brand": "Maximum FX Salon",
+        "check_date:opening_hours": "2025-03-28",
+        "female:signed": "no",
+        "image": "https://osm-img.piperswe.me/20250328_0120.jpg",
+        "male:signed": "no",
+        "name": "Maximum FX Salon",
+        "opening_hours": "Tu 11:00-18:00; We-Th 11:00-20:00; Fr 09:00-16:00; Sa 09:00-18:00",
+        "opening_hours:signed": "no",
+        "panoramax": "16650e41-cc7d-4d73-aaac-4bb5ba50c7a8",
+        "phone": "+1 512 472 3331",
+        "shop": "hairdresser",
+        "website": "https://www.maximumfx.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7636947,
+          30.2530507
+        ]
+      },
+      "id": "node/12707863543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12708690937",
+        "image": "https://osm-img.piperswe.me/20250328_osm_survey_5_30/20250328_0075.jpg",
+        "name": "Ruiz Salon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7548029,
+          30.2705577
+        ]
+      },
+      "id": "node/12708690937"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12780247201",
+        "addr:housenumber": "1605",
+        "addr:postcode": "78704",
+        "addr:street": "South Lamar Boulevard",
+        "contact:facebook": "wheelhousesalonaustin",
+        "contact:instagram": "wheelhousesalonatx",
+        "name": "Wheelhouse Salon",
+        "opening_hours": "We,Fr 09:00-18:00; Tu,Th 10:00-19:00; Sa 09:00-15:00",
+        "phone": "+1-512-201-4274",
+        "shop": "hairdresser",
+        "website": "https://wheelhousesalon.com/austin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7647636,
+          30.2512566
+        ]
+      },
+      "id": "node/12780247201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12800982632",
+        "addr:city": "Austin",
+        "addr:housenumber": "6406",
+        "addr:postcode": "78752",
+        "addr:state": "TX",
+        "addr:street": "North Interstate 35",
+        "addr:unit": "2300",
+        "female:signed": "no",
+        "male:signed": "no",
+        "name": "MY SALON Suite",
+        "phone": "+1-737-937-8483",
+        "shop": "hairdresser",
+        "website": "https://www.mysalonsuite.com/north-austin/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7085989,
+          30.3251945
+        ]
+      },
+      "id": "node/12800982632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12801111964",
+        "addr:city": "Austin",
+        "addr:housenumber": "9300",
+        "addr:postcode": "78748",
+        "addr:state": "TX",
+        "addr:street": "South Interstate 35",
+        "addr:unit": "A300",
+        "name": "Phenix Salon Suites",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7896942,
+          30.1664364
+        ]
+      },
+      "id": "node/12801111964"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12815243178",
+        "addr:city": "Austin",
+        "addr:housenumber": "1601",
+        "addr:postcode": "78702",
+        "addr:state": "TX",
+        "addr:street": "East 5th Street",
+        "addr:unit": "106",
+        "hairdresser": "barber",
+        "name": "Scruff's Barbershop",
+        "opening_hours": "Tu-Fr 10:00-19:00; Sa 10:00-17:00; Su,Mo off",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7266028,
+          30.2618329
+        ]
+      },
+      "id": "node/12815243178"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12837339327",
+        "addr:city": "Austin",
+        "addr:housenumber": "8806",
+        "addr:postcode": "78753",
+        "addr:state": "TX",
+        "addr:street": "North Lamar Boulevard",
+        "hairdresser": "barber",
+        "name": "Justina's Salon",
+        "payment:cash": "yes",
+        "payment:cheque": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:discover_card": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "phone": "+1-512-928-5522",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7012457,
+          30.3571443
+        ]
+      },
+      "id": "node/12837339327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12852240621",
+        "addr:city": "Austin",
+        "addr:housenumber": "6800",
+        "addr:postcode": "78745",
+        "addr:state": "TX",
+        "addr:street": "West Gate Boulevard",
+        "hairdresser": "barber",
+        "name": "Skinny's Barber Shop",
+        "phone": "+1-512-992-0687",
+        "shop": "hairdresser",
+        "website": "skinnysbarbershop.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8157609,
+          30.2080941
+        ]
+      },
+      "id": "node/12852240621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12926851001",
+        "addr:housenumber": "215",
+        "addr:postcode": "78751",
+        "addr:street": "West North Loop Boulevard",
+        "name": "Barbershop 808",
+        "shop": "hairdresser",
+        "website": "https://barber-808.square.site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7245421,
+          30.3183871
+        ]
+      },
+      "id": "node/12926851001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12996104701",
+        "addr:housenumber": "2624",
+        "addr:postcode": "78745",
+        "addr:street": "Western Trails Boulevard",
+        "level": "0",
+        "name": "Salon Lofts",
+        "shop": "hairdresser",
+        "website": "https://salonlofts.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7989519,
+          30.2301452
+        ]
+      },
+      "id": "node/12996104701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13003490460",
+        "addr:city": "Austin",
+        "addr:housenumber": "6800",
+        "addr:postcode": "78745",
+        "addr:state": "TX",
+        "addr:street": "West Gate Boulevard",
+        "name": "N' Style Salon",
+        "opening_hours": "Tu-Fr 10:00-18:00; Sa 09:00-16:00",
+        "phone": "+1-512-326-4446",
+        "shop": "hairdresser",
+        "website": "https://www.nstylesalonatx.net/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8160545,
+          30.2088509
+        ]
+      },
+      "id": "node/13003490460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13003490470",
+        "addr:city": "Austin",
+        "addr:housenumber": "3008",
+        "addr:postcode": "78745",
+        "addr:state": "TX",
+        "addr:street": "Davis Lane",
+        "name": "Torres Hair Design",
+        "opening_hours": "Tu-Sa 08:00-17:00",
+        "phone": "+1-512-444-4115",
+        "shop": "hairdresser",
+        "website": "https://torreshairdesign.mysalononline.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.831956,
+          30.1910036
+        ]
+      },
+      "id": "node/13003490470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13092757496",
+        "addr:city": "Austin",
+        "addr:housenumber": "5510",
+        "addr:postcode": "78745",
+        "addr:state": "TX",
+        "addr:street": "South Interstate 35",
+        "addr:unit": "330",
+        "brand": "Great Clips",
+        "brand:wikidata": "Q5598967",
+        "name": "Great Clips",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7637431,
+          30.2002245
+        ]
+      },
+      "id": "node/13092757496"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13115722895",
+        "addr:city": "Austin",
+        "addr:housenumber": "9900",
+        "addr:postcode": "78748",
+        "addr:state": "TX",
+        "addr:street": "South Interstate 35",
+        "addr:unit": "O-500",
+        "air_conditioning": "yes",
+        "branch": "Southpark Meadows",
+        "check_date": "2025-09-03",
+        "email": "solasalonrhy@gmail.com",
+        "name": "Sola Salon Studios",
+        "phone": "+1-512-814-6070",
+        "shop": "hairdresser",
+        "website": "https://www.solasalonstudios.com",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7935421,
+          30.1539944
+        ]
+      },
+      "id": "node/13115722895"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13298140174",
+        "addr:city": "Austin",
+        "addr:housenumber": "2101",
+        "addr:postcode": "78704",
+        "addr:state": "TX",
+        "addr:street": "South 1st Street",
+        "addr:unit": "G",
+        "check_date": "2025-11-11",
+        "currency:XBT": "yes",
+        "hairdresser": "barber",
+        "name": "Royalty’s BarberShop",
+        "opening_hours": "Mo 12:00-18:00; Tu-Th 12:00-18:50; Fr 12:10-18:50; Sa 11:30-18:50",
+        "payment:lightning": "yes",
+        "payment:lightning:operator": "square",
+        "payment:lightning_contactless": "no",
+        "payment:onchain": "no",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7572765,
+          30.2446128
+        ]
+      },
+      "id": "node/13298140174"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13299887434",
+        "addr:city": "Austin",
+        "addr:housenumber": "1912",
+        "addr:postcode": "78702",
+        "addr:state": "TX",
+        "addr:street": "East 7th Street",
+        "addr:unit": "C",
+        "hairdresser": "barber",
+        "name": "Barbon's Barbershop",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7208527,
+          30.2626251
+        ]
+      },
+      "id": "node/13299887434"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13541879134",
+        "addr:city": "Austin",
+        "addr:housenumber": "821",
+        "addr:postcode": "78701",
+        "addr:state": "TX",
+        "addr:street": "West 11th Street",
+        "addr:unit": "1",
+        "check_date": "2026-02-10",
+        "contact:email": "nick@geiserbarbering.org",
+        "contact:facebook": "https://www.facebook.com/geiserbarbering",
+        "contact:instagram": "https://www.instagram.com/geiserbarbering",
+        "currency:XBT": "yes",
+        "hairdresser": "barber",
+        "name": "Geiser Barbering",
+        "opening_hours": "Mo,Tu,Th,Fr 10:00-19:00; We 13:30-19:00; Sa 09:00-14:00",
+        "payment:lightning": "yes",
+        "payment:lightning:operator": "square",
+        "payment:lightning_contactless": "no",
+        "payment:onchain": "no",
+        "phone": "+1-512-596-9956",
+        "shop": "hairdresser",
+        "website": "https://www.geiserbarbering.org"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7504281,
+          30.2751986
+        ]
+      },
+      "id": "node/13541879134"
+    }
+  ]
+}

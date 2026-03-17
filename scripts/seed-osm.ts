@@ -273,7 +273,12 @@ async function main() {
   console.log(`Total businesses in database: ${count}`);
 }
 
-main().catch((err) => {
-  console.error("Seed script failed:", err);
-  process.exit(1);
-});
+main()
+  .catch((err) => {
+    console.error("Seed script failed:", err);
+    process.exit(1);
+  })
+  .finally(() => {
+    // Close database connection pool
+    process.exit(0);
+  });

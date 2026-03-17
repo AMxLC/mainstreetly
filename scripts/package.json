@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "seed:osm": "tsx seed-osm.ts",
+    "seed:geojson": "tsx seed-geojson.ts",
+    "enrich:outscraper": "tsx enrich-outscraper.ts",
+    "deduplicate": "tsx deduplicate.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
