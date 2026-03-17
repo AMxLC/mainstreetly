@@ -35,61 +35,82 @@ try {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "data");
 
-// ─── CSV Parsing ────────────────────────────────────────────────────────────
+// ─── RFC 4180-compliant CSV Parser (handles multiline quoted fields) ────────
 
 function parseCSV(content: string): Record<string, string>[] {
-  const lines = content.split("\n");
-  if (lines.length < 2) return [];
-
-  const headers = parseCSVLine(lines[0]);
   const rows: Record<string, string>[] = [];
+  const chars = content;
+  const len = chars.length;
+  let pos = 0;
 
-  for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (!line) continue;
+  function parseField(): string {
+    if (pos >= len) return "";
 
-    const values = parseCSVLine(line);
+    if (chars[pos] === '"') {
+      // Quoted field — can span multiple lines
+      pos++; // skip opening quote
+      let field = "";
+      while (pos < len) {
+        if (chars[pos] === '"') {
+          if (pos + 1 < len && chars[pos + 1] === '"') {
+            field += '"';
+            pos += 2;
+          } else {
+            pos++; // skip closing quote
+            break;
+          }
+        } else {
+          field += chars[pos];
+          pos++;
+        }
+      }
+      return field;
+    }
+
+    // Unquoted field
+    let field = "";
+    while (pos < len && chars[pos] !== "," && chars[pos] !== "\n" && chars[pos] !== "\r") {
+      field += chars[pos];
+      pos++;
+    }
+    return field;
+  }
+
+  function parseRow(): string[] {
+    const fields: string[] = [];
+    fields.push(parseField());
+    while (pos < len && chars[pos] === ",") {
+      pos++; // skip comma
+      fields.push(parseField());
+    }
+    // Skip line ending
+    if (pos < len && chars[pos] === "\r") pos++;
+    if (pos < len && chars[pos] === "\n") pos++;
+    return fields;
+  }
+
+  // Parse header row
+  const headers = parseRow().map((h) => h.trim());
+
+  // Parse data rows
+  while (pos < len) {
+    // Skip blank lines
+    if (chars[pos] === "\n" || chars[pos] === "\r") {
+      pos++;
+      continue;
+    }
+
+    const values = parseRow();
+    if (values.length === 1 && values[0] === "") continue;
+
     const row: Record<string, string> = {};
     for (let j = 0; j < headers.length; j++) {
-      row[headers[j].trim()] = (values[j] || "").trim();
+      row[headers[j]] = (values[j] || "").trim();
     }
     rows.push(row);
   }
 
   return rows;
-}
-
-function parseCSVLine(line: string): string[] {
-  const fields: string[] = [];
-  let current = "";
-  let inQuotes = false;
-
-  for (let i = 0; i < line.length; i++) {
-    const ch = line[i];
-    if (inQuotes) {
-      if (ch === '"') {
-        if (i + 1 < line.length && line[i + 1] === '"') {
-          current += '"';
-          i++; // skip escaped quote
-        } else {
-          inQuotes = false;
-        }
-      } else {
-        current += ch;
-      }
-    } else {
-      if (ch === '"') {
-        inQuotes = true;
-      } else if (ch === ",") {
-        fields.push(current);
-        current = "";
-      } else {
-        current += ch;
-      }
-    }
-  }
-  fields.push(current);
-  return fields;
 }
 
 // ─── Category Mapping (Google Maps subtypes → Mainstreetly categories) ──────
@@ -113,22 +134,31 @@ const GOOGLE_CATEGORY_MAP: Record<string, string> = {
   veterinarian: "veterinarian",
   veterinary_care: "veterinarian",
   animal_hospital: "veterinarian",
+  pet_store: "veterinarian",
 
   // Trades
   plumber: "plumber",
   plumbing: "plumber",
+  plumbing_service: "plumber",
   electrician: "electrician",
   electrical_contractor: "electrician",
   hvac_contractor: "hvac",
   heating_contractor: "hvac",
   air_conditioning_contractor: "hvac",
+  air_conditioning_repair_service: "hvac",
   painter: "painter",
+  painting: "painter",
   painting_contractor: "painter",
+  house_painter: "painter",
   carpenter: "carpenter",
+  carpentry: "carpenter",
+  handyman: "carpenter",
 
   // Auto
   auto_repair: "auto_repair",
+  auto_repair_shop: "auto_repair",
   car_repair: "auto_repair",
+  car_repair_and_maintenance: "auto_repair",
   mechanic: "auto_repair",
   auto_parts_store: "auto_parts",
 
@@ -140,9 +170,11 @@ const GOOGLE_CATEGORY_MAP: Record<string, string> = {
 
   // Cleaning
   laundry: "laundry",
+  laundry_service: "laundry",
   laundromat: "laundry",
   dry_cleaner: "dry_cleaning",
   dry_cleaning: "dry_cleaning",
+  dry_cleaning_service: "dry_cleaning",
 
   // Professional
   lawyer: "lawyer",
@@ -150,16 +182,30 @@ const GOOGLE_CATEGORY_MAP: Record<string, string> = {
   law_firm: "lawyer",
   accountant: "accountant",
   accounting_firm: "accountant",
+  accounting: "accountant",
   tax_preparation: "accountant",
+  tax_preparation_service: "accountant",
   real_estate_agency: "real_estate",
   real_estate_agent: "real_estate",
+  real_estate: "real_estate",
 
   // Other
   child_care_agency: "childcare",
   day_care: "childcare",
+  child_care: "childcare",
+  preschool: "childcare",
   gym: "gym",
   fitness_center: "gym",
+  health_club: "gym",
+  yoga_studio: "gym",
   spa: "spa",
+  massage: "spa",
+  massage_therapist: "spa",
+
+  // Cleaning services
+  cleaning_service: "cleaning",
+  house_cleaning_service: "cleaning",
+  pressure_washing_service: "painter",
 };
 
 function mapGoogleCategory(subtypes: string, category: string): string | null {
@@ -187,7 +233,6 @@ function parseWorkingHours(
   if (!hoursStr || hoursStr === "None" || hoursStr === "N/A") return null;
 
   // Outscraper formats hours as JSON-like or pipe-separated
-  // Try JSON parse first
   try {
     const parsed = JSON.parse(hoursStr);
     if (typeof parsed === "object") return parsed;
@@ -195,11 +240,10 @@ function parseWorkingHours(
     // not JSON
   }
 
-  // Store as raw for now — the MCP server handles raw hour strings
   return { raw: hoursStr, source: "google" };
 }
 
-// ─── Name Normalization ─────────────────────────────────────────────────────
+// ─── Helpers ────────────────────────────────────────────────────────────────
 
 function normalizeName(name: string): string {
   return name
@@ -209,8 +253,6 @@ function normalizeName(name: string): string {
     .replace(/[^a-z0-9]/g, "")
     .trim();
 }
-
-// ─── Haversine Distance (meters) ────────────────────────────────────────────
 
 function haversineMeters(
   lat1: number,
@@ -230,15 +272,12 @@ function haversineMeters(
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
-// ─── Slug Generator ─────────────────────────────────────────────────────────
-
 function generateSlug(name: string, googleId: string): string {
   const base = name
     .toLowerCase()
     .replace(/['']/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
-  // Use last 8 chars of google_id for uniqueness
   const suffix = googleId.replace(/[^a-z0-9]/gi, "").slice(-8);
   return `${base}-g${suffix}`;
 }
@@ -263,19 +302,15 @@ async function main() {
       (f) => f.endsWith(".csv") && !f.toLowerCase().includes("review"),
     );
   } catch {
-    console.error(
-      `No data directory found at ${DATA_DIR}`,
-    );
+    console.error(`No data directory found at ${DATA_DIR}`);
     console.error("Create scripts/data/ and place your Outscraper CSV files there.");
     process.exit(1);
   }
 
   if (csvFiles.length === 0) {
     console.error("No business CSV files found in scripts/data/");
-    console.error(
-      'Place your Outscraper "Google Maps Data Scraper" CSV exports there.',
-    );
-    console.error('(Files with "review" in the name are skipped — those are handled separately.)');
+    console.error('Place your Outscraper "Google Maps Data Scraper" CSV exports there.');
+    console.error('(Files with "review" in the name are skipped.)');
     process.exit(1);
   }
 
@@ -305,12 +340,20 @@ async function main() {
     nameIndex.get(key)!.push(biz);
   }
 
+  // Build place_id index for dedup
+  const placeIdIndex = new Set(
+    existing
+      .filter((b) => b.sourceGooglePlaceId)
+      .map((b) => b.sourceGooglePlaceId!),
+  );
+
   let totalRows = 0;
   let matched = 0;
   let created = 0;
   let skippedNoCategory = 0;
   let skippedNoName = 0;
   let alreadyLinked = 0;
+  let errors = 0;
 
   for (const csvFile of csvFiles) {
     console.log(`\n--- Processing: ${csvFile} ---`);
@@ -336,11 +379,18 @@ async function main() {
       const reviewCount = parseInt(row.reviews, 10) || null;
       const phone = row.phone || null;
       const website = row.website || null;
-      const address = row.address || `${row.street || ""}, Austin, TX`.replace(/^,\s*/, "");
+      const address =
+        row.address || `${row.street || ""}, Austin, TX`.replace(/^,\s*/, "");
       const hours = parseWorkingHours(row.working_hours || "");
       const subtypes = row.subtypes || "";
       const category = row.category || "";
       const zip = row.postal_code || null;
+
+      // Skip if already enriched by place_id
+      if (placeId && placeIdIndex.has(placeId)) {
+        alreadyLinked++;
+        continue;
+      }
 
       // Try to find a match: same normalized name within 100m
       const normalizedName = normalizeName(name);
@@ -348,8 +398,10 @@ async function main() {
       let match: ExistingBusiness | null = null;
 
       for (const candidate of candidates) {
-        // Skip if already linked to a different Google Place ID
-        if (candidate.sourceGooglePlaceId && candidate.sourceGooglePlaceId !== placeId) {
+        if (
+          candidate.sourceGooglePlaceId &&
+          candidate.sourceGooglePlaceId !== placeId
+        ) {
           continue;
         }
         const dist = haversineMeters(lat, lng, candidate.latitude, candidate.longitude);
@@ -359,17 +411,8 @@ async function main() {
         }
       }
 
-      // Also match by Google Place ID directly (if already enriched)
-      if (!match && placeId) {
-        const byPlaceId = existing.find((b) => b.sourceGooglePlaceId === placeId);
-        if (byPlaceId) {
-          alreadyLinked++;
-          continue; // Already enriched in a previous run
-        }
-      }
-
       if (match) {
-        // Update existing business with Google data
+        // Single UPDATE: merge Google data + recalculate composite
         await db
           .update(businesses)
           .set({
@@ -379,34 +422,24 @@ async function main() {
             phone: phone || undefined,
             website: website || undefined,
             hours: hours || undefined,
-            dataSources: sql`array_append(
-              CASE WHEN 'google' = ANY(data_sources) THEN data_sources
-              ELSE array_append(data_sources, 'google') END,
-              NULL
+            ratingComposite: sql`(
+              COALESCE(${rating}, 0) * COALESCE(${reviewCount}, 0)
+              + COALESCE(rating_yelp, 0) * COALESCE(rating_yelp_count, 0)
+            ) / NULLIF(
+              COALESCE(${reviewCount}, 0) + COALESCE(rating_yelp_count, 0), 0
             )`,
+            totalReviewCount: sql`COALESCE(${reviewCount}, 0) + COALESCE(rating_yelp_count, 0)`,
+            dataSources: sql`CASE
+              WHEN 'google' = ANY(data_sources) THEN data_sources
+              ELSE array_append(data_sources, 'google')
+            END`,
             lastScrapedAt: new Date(),
             updatedAt: new Date(),
           })
           .where(eq(businesses.id, match.id));
 
-        // Update composite rating
-        await db
-          .update(businesses)
-          .set({
-            ratingComposite: sql`(
-              COALESCE(rating_google, 0) * COALESCE(rating_google_count, 0)
-              + COALESCE(rating_yelp, 0) * COALESCE(rating_yelp_count, 0)
-            ) / NULLIF(
-              COALESCE(rating_google_count, 0) + COALESCE(rating_yelp_count, 0), 0
-            )`,
-            totalReviewCount: sql`COALESCE(rating_google_count, 0) + COALESCE(rating_yelp_count, 0)`,
-            dataSources: sql`CASE
-              WHEN 'google' = ANY(data_sources) THEN data_sources
-              ELSE array_append(data_sources, 'google')
-            END`,
-          })
-          .where(eq(businesses.id, match.id));
-
+        // Track place_id to avoid re-processing
+        if (placeId) placeIdIndex.add(placeId);
         matched++;
       } else {
         // No match — create new record if we can map the category
@@ -416,7 +449,10 @@ async function main() {
           continue;
         }
 
-        const slug = generateSlug(name, googleId || placeId || String(totalRows));
+        const slug = generateSlug(
+          name,
+          googleId || placeId || String(totalRows),
+        );
 
         try {
           await db
@@ -426,7 +462,10 @@ async function main() {
               slug,
               category: mappedCategory,
               subcategories: subtypes
-                ? subtypes.split(",").map((s: string) => s.trim()).filter(Boolean)
+                ? subtypes
+                    .split(",")
+                    .map((s: string) => s.trim())
+                    .filter(Boolean)
                 : [],
               address: address || "Austin, TX",
               city: row.city || "Austin",
@@ -448,13 +487,16 @@ async function main() {
             })
             .onConflictDoNothing({ target: businesses.slug });
 
+          if (placeId) placeIdIndex.add(placeId);
           created++;
         } catch (err) {
-          console.error(`  Failed to insert "${name}": ${err}`);
+          errors++;
+          if (errors <= 10) {
+            console.error(`  Failed to insert "${name}": ${err}`);
+          }
         }
       }
 
-      // Progress log every 500 rows
       if (totalRows % 500 === 0) {
         console.log(
           `  Progress: ${totalRows} rows — ${matched} matched, ${created} created`,
@@ -475,6 +517,7 @@ async function main() {
   console.log(`Already linked (skipped): ${alreadyLinked}`);
   console.log(`Skipped (no mapped category): ${skippedNoCategory}`);
   console.log(`Skipped (no name): ${skippedNoName}`);
+  console.log(`Errors: ${errors}`);
   console.log(`Total businesses in database: ${count}`);
 }
 
