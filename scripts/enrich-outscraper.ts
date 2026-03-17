@@ -423,12 +423,12 @@ async function main() {
             website: website || undefined,
             hours: hours || undefined,
             ratingComposite: sql`(
-              COALESCE(${rating}, 0) * COALESCE(${reviewCount}, 0)
+              COALESCE(${rating}::real, 0) * COALESCE(${reviewCount}::int, 0)
               + COALESCE(rating_yelp, 0) * COALESCE(rating_yelp_count, 0)
             ) / NULLIF(
-              COALESCE(${reviewCount}, 0) + COALESCE(rating_yelp_count, 0), 0
+              COALESCE(${reviewCount}::int, 0) + COALESCE(rating_yelp_count, 0), 0
             )`,
-            totalReviewCount: sql`COALESCE(${reviewCount}, 0) + COALESCE(rating_yelp_count, 0)`,
+            totalReviewCount: sql`COALESCE(${reviewCount}::int, 0) + COALESCE(rating_yelp_count, 0)`,
             dataSources: sql`CASE
               WHEN 'google' = ANY(data_sources) THEN data_sources
               ELSE array_append(data_sources, 'google')
