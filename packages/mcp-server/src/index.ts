@@ -244,7 +244,7 @@ function createServer(): McpServer {
 
 // ─── HTTP Transport ──────────────────────────────────────────────────────────
 
-const app = createMcpExpressApp();
+const app = createMcpExpressApp({ host: "0.0.0.0" });
 const transports: Record<string, StreamableHTTPServerTransport> = {};
 
 // Health check
@@ -326,7 +326,7 @@ app.delete("/mcp", async (req, res) => {
 
 const PORT = parseInt(process.env.PORT || "3000", 10);
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.error(`Mainstreetly MCP server listening on port ${PORT}`);
   console.error(`MCP endpoint: http://localhost:${PORT}/mcp`);
 });
