@@ -144,14 +144,19 @@ export async function searchBusinesses(
   const radiusMeters = (params.radius_km ?? 10) * 1000;
   const categories = queryToCategories(params.query);
 
+  // Haversine distance in meters (no PostGIS needed)
+  const distanceExpr = sql`(
+    6371000 * acos(
+      cos(radians(${coords.lat})) * cos(radians(${businesses.latitude}))
+      * cos(radians(${businesses.longitude}) - radians(${coords.lng}))
+      + sin(radians(${coords.lat})) * sin(radians(${businesses.latitude}))
+    )
+  )`;
+
   // Build WHERE conditions
   const conditions = [
-    // Spatial filter using PostGIS
-    sql`ST_DWithin(
-      coordinates,
-      ST_SetSRID(ST_MakePoint(${coords.lng}, ${coords.lat}), 4326)::geography,
-      ${radiusMeters}
-    )`,
+    // Spatial filter using Haversine
+    sql`${distanceExpr} <= ${radiusMeters}`,
   ];
 
   // Category filter
@@ -200,19 +205,11 @@ export async function searchBusinesses(
       ratingComposite: businesses.ratingComposite,
       totalReviewCount: businesses.totalReviewCount,
       profileStatus: businesses.profileStatus,
-      distance: sql<number>`ST_Distance(
-        coordinates,
-        ST_SetSRID(ST_MakePoint(${coords.lng}, ${coords.lat}), 4326)::geography
-      )`.as("distance"),
+      distance: sql<number>`${distanceExpr}`.as("distance"),
     })
     .from(businesses)
     .where(and(...conditions))
-    .orderBy(
-      sql`ST_Distance(
-        coordinates,
-        ST_SetSRID(ST_MakePoint(${coords.lng}, ${coords.lat}), 4326)::geography
-      )`,
-    )
+    .orderBy(sql`${distanceExpr}`)
     .limit(params.limit ?? 20);
 
   // Check which businesses have services

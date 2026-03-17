@@ -1,5 +1,4 @@
 -- Enable required extensions
-CREATE EXTENSION IF NOT EXISTS postgis;
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
 
 -- Users table
@@ -25,7 +24,6 @@ CREATE TABLE IF NOT EXISTS "businesses" (
   "zip" text,
   "latitude" real NOT NULL,
   "longitude" real NOT NULL,
-  "coordinates" geography(POINT, 4326),
   "service_radius_km" real,
   "phone" text,
   "website" text,
@@ -50,20 +48,6 @@ CREATE TABLE IF NOT EXISTS "businesses" (
   "created_at" timestamptz DEFAULT now(),
   "updated_at" timestamptz DEFAULT now()
 );
-
--- Auto-populate coordinates from lat/lng on insert/update
-CREATE OR REPLACE FUNCTION update_coordinates()
-RETURNS TRIGGER AS $$
-BEGIN
-  NEW.coordinates = ST_SetSRID(ST_MakePoint(NEW.longitude, NEW.latitude), 4326)::geography;
-  RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trg_update_coordinates
-  BEFORE INSERT OR UPDATE OF latitude, longitude ON businesses
-  FOR EACH ROW
-  EXECUTE FUNCTION update_coordinates();
 
 -- Services table
 CREATE TABLE IF NOT EXISTS "services" (
@@ -105,7 +89,6 @@ CREATE TABLE IF NOT EXISTS "agent_queries" (
 );
 
 -- Indexes
-CREATE INDEX IF NOT EXISTS idx_businesses_coordinates ON businesses USING GIST(coordinates);
 CREATE INDEX IF NOT EXISTS idx_businesses_category_rating ON businesses(category, rating_composite DESC NULLS LAST);
 CREATE INDEX IF NOT EXISTS idx_businesses_status ON businesses(profile_status);
 CREATE INDEX IF NOT EXISTS idx_businesses_name_trgm ON businesses USING GIN(name gin_trgm_ops);
