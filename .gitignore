@@ -35,5 +35,4 @@ data/
 *.csv
 !scripts/data/.gitkeep
 
-# Drizzle
-drizzle/meta/
+# Drizzle (meta/ must be tracked for migrations to work)
