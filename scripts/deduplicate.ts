@@ -333,7 +333,11 @@ async function recalculateCompositeRatings(db: ReturnType<typeof getDb>) {
   console.log("Composite ratings updated.");
 }
 
-main().catch((err) => {
-  console.error("Deduplication script failed:", err);
-  process.exit(1);
-});
+main()
+  .catch((err) => {
+    console.error("Deduplication script failed:", err);
+    process.exit(1);
+  })
+  .finally(() => {
+    process.exit(0);
+  });

@@ -521,7 +521,11 @@ async function main() {
   console.log(`Total businesses in database: ${count}`);
 }
 
-main().catch((err) => {
-  console.error("Enrichment script failed:", err);
-  process.exit(1);
-});
+main()
+  .catch((err) => {
+    console.error("Enrichment script failed:", err);
+    process.exit(1);
+  })
+  .finally(() => {
+    process.exit(0);
+  });

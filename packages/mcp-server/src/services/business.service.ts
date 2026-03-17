@@ -171,6 +171,17 @@ export async function searchBusinesses(
     );
   }
 
+  // Price filter — match businesses that have at least one service within budget
+  if (params.max_price) {
+    conditions.push(
+      sql`EXISTS (
+        SELECT 1 FROM services s
+        WHERE s.business_id = ${businesses.id}
+        AND s.price_min <= ${params.max_price}
+      )`,
+    );
+  }
+
   const rows = await db
     .select({
       id: businesses.id,
