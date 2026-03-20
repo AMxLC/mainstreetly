@@ -41,6 +41,18 @@ export async function logQuery(entry: QueryLogEntry): Promise<void> {
     }
   } catch (err) {
     // Don't let logging failures break the MCP response
-    console.error("Failed to log query:", err);
+    // Structured error logging for debugging
+    const errorMessage = err instanceof Error ? err.message : String(err);
+    const errorStack = err instanceof Error ? err.stack : undefined;
+    console.error(
+      JSON.stringify({
+        level: "error",
+        component: "query-logger",
+        message: "Failed to log query",
+        error: errorMessage,
+        query: entry.queryText,
+        stack: errorStack,
+      }),
+    );
   }
 }

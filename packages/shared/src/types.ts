@@ -1,23 +1,27 @@
 // MCP response types — optimized for token efficiency
 
-export interface BusinessSearchResult {
+export interface BusinessBase {
   id: string;
   name: string;
   category: string;
   address: string;
-  distance_km: number | null;
+  phone: string | null;
+  website: string | null;
+  email?: string | null;
+  hours_today?: string | null;
   rating: number | null;
   ratings: {
     google: number | null;
     yelp: number | null;
-    reviews: number | null;
+    reviews?: number | null;
   };
-  phone: string | null;
-  website: string | null;
-  hours_today: string | null;
   profile_status: string;
-  services_available: boolean;
   booking_available: boolean;
+}
+
+export interface BusinessSearchResult extends BusinessBase {
+  distance_km: number | null;
+  services_available: boolean;
 }
 
 export interface SearchResponse {
@@ -33,16 +37,9 @@ export interface BusinessHours {
     | "24hours";
 }
 
-export interface BusinessProfile {
-  id: string;
-  name: string;
-  category: string;
+export interface BusinessProfile extends BusinessBase {
   subcategories: string[];
-  address: string;
   coordinates: { lat: number; lng: number };
-  phone: string | null;
-  website: string | null;
-  email: string | null;
   hours: BusinessHours | null;
   ratings: {
     google: { score: number | null; count: number | null };
@@ -51,9 +48,7 @@ export interface BusinessProfile {
     composite: number | null;
     total_reviews: number | null;
   };
-  profile_status: string;
   services: ServiceInfo[];
-  booking_available: boolean;
   availability_available: boolean;
 }
 
