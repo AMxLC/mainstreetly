@@ -10,11 +10,6 @@ export interface BusinessBase {
   email?: string | null;
   hours_today?: string | null;
   rating: number | null;
-  ratings: {
-    google: number | null;
-    yelp: number | null;
-    reviews?: number | null;
-  };
   profile_status: string;
   booking_available: boolean;
 }
@@ -22,6 +17,11 @@ export interface BusinessBase {
 export interface BusinessSearchResult extends BusinessBase {
   distance_km: number | null;
   services_available: boolean;
+  ratings: {
+    google: number | null;
+    yelp: number | null;
+    reviews?: number | null;
+  };
 }
 
 export interface SearchResponse {

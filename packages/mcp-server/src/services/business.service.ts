@@ -235,6 +235,7 @@ export async function getBusinessProfile(
     website: biz.website,
     email: biz.email,
     hours: biz.hours as BusinessHours | null,
+    rating: biz.ratingComposite,
     ratings: {
       google: { score: biz.ratingGoogle, count: biz.ratingGoogleCount },
       yelp: { score: biz.ratingYelp, count: biz.ratingYelpCount },

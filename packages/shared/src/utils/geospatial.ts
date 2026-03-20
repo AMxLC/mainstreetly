@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import type { SQL } from "drizzle-orm";
+import type { SQL, Column } from "drizzle-orm";
 import { getDb, geocodingLookups } from "../db/index.js";
 import { eq, and, ilike } from "drizzle-orm";
 
@@ -20,8 +20,8 @@ import { eq, and, ilike } from "drizzle-orm";
 export function haversineSQL(
   userLat: number,
   userLng: number,
-  businessLatColumn: SQL.Aliased<number>,
-  businessLngColumn: SQL.Aliased<number>,
+  businessLatColumn: Column | SQL.Aliased<number>,
+  businessLngColumn: Column | SQL.Aliased<number>,
 ): SQL<number> {
   return sql`(
     6371000 * acos(
