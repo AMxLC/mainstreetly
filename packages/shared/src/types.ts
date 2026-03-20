@@ -137,3 +137,43 @@ export const CATEGORY_LABELS: Record<string, string> = {
   gym: "Gym / Fitness",
   spa: "Spa",
 };
+
+// ─── Waitlist Signup ────────────────────────────────────────────────────────
+
+export interface WaitlistSignup {
+  id: string;
+  email: string;
+  businessName: string | null;
+  businessCategory: string | null;
+  city: string | null;
+  state: string | null;
+  phone: string | null;
+  position: number | null;
+  status: string; // waiting | contacted | onboarded
+  createdAt: Date;
+}
+
+// ─── Developer Key ──────────────────────────────────────────────────────────
+
+export interface DeveloperKey {
+  id: string;
+  name: string;
+  keyPrefix: string | null; // e.g., "sk-...abc" (hash not exposed)
+  rateLimitPerMinute: number;
+  isActive: boolean;
+  createdAt: Date;
+  lastUsedAt: Date | null;
+}
+
+// ─── Geocoding Lookup ───────────────────────────────────────────────────────
+
+export interface GeocodingLookup {
+  id: string;
+  zip: string | null;
+  city: string | null;
+  state: string | null;
+  country: string; // default "US"
+  latitude: number | null;
+  longitude: number | null;
+  createdAt: Date;
+}

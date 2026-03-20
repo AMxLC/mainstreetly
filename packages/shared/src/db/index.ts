@@ -29,3 +29,8 @@ export function getDb() {
 export type Database = ReturnType<typeof getDb>;
 
 export * from "./schema.js";
+export type {
+  WaitlistSignup,
+  DeveloperKey,
+  GeocodingLookup,
+} from "../types.js";

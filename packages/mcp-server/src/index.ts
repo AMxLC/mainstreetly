@@ -18,7 +18,7 @@ const server = new McpServer({
 
 server.tool(
   "search_businesses",
-  "Find local service businesses by type and location. Search for barbers, dentists, plumbers, cleaners, restaurants, spas, mechanics, and more in Austin TX. Returns ratings from Google, Yelp, and Facebook. Supports price and rating filters.",
+  "Find local service businesses by type and location in any US city. Search for barbers, dentists, plumbers, cleaners, restaurants, spas, mechanics, and more. Returns ratings from Google, Yelp, and Facebook. Supports price, rating, and radius filters.",
   {
     query: z
       .string()

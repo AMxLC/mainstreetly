@@ -1,4 +1,4 @@
-import { getDb, businesses, services } from "@mainstreetly/shared";
+import { getDb, businesses, services, geocodingLookups } from "@mainstreetly/shared";
 import { eq, sql, and, gte, lte, ilike, desc, or } from "drizzle-orm";
 import type {
   BusinessSearchResult,
@@ -7,40 +7,61 @@ import type {
   BusinessHours,
 } from "@mainstreetly/shared";
 
-// Austin zip code centroids for basic geocoding
-const ZIP_COORDS: Record<string, { lat: number; lng: number }> = {
-  "78701": { lat: 30.2672, lng: -97.7431 }, // Downtown
-  "78702": { lat: 30.2627, lng: -97.7188 }, // East Austin
-  "78703": { lat: 30.2955, lng: -97.7675 }, // Tarrytown
-  "78704": { lat: 30.2402, lng: -97.7633 }, // South Congress / SoCo
-  "78705": { lat: 30.2916, lng: -97.7415 }, // UT / Campus
-  "78721": { lat: 30.2665, lng: -97.6928 }, // East Austin
-  "78722": { lat: 30.2851, lng: -97.7127 }, // Cherrywood
-  "78723": { lat: 30.3013, lng: -97.6858 }, // Windsor Park
-  "78731": { lat: 30.3535, lng: -97.7636 }, // NW Hills
-  "78741": { lat: 30.2228, lng: -97.7340 }, // South Austin
-  "78745": { lat: 30.1946, lng: -97.7932 }, // South Austin
-  "78748": { lat: 30.1618, lng: -97.8013 }, // South Austin
-  "78751": { lat: 30.3135, lng: -97.7232 }, // Hyde Park
-  "78752": { lat: 30.3301, lng: -97.7085 }, // North Loop
-  "78753": { lat: 30.3797, lng: -97.6849 }, // North Austin
-  "78757": { lat: 30.3508, lng: -97.7337 }, // Crestview
-  "78758": { lat: 30.3846, lng: -97.7139 }, // North Austin
-  "78759": { lat: 30.3966, lng: -97.7526 }, // NW Austin / Arboretum
-};
+// ─── Geocoding ──────────────────────────────────────────────────────────────
+// Primary: query geocoding_lookups table (populated from US Census zip/city data)
+// Fallback: Nominatim public API (1 req/sec rate limit)
+// Future: PostGIS ST_DWithin replaces Haversine for distance queries
 
-// Default: downtown Austin
-const AUSTIN_CENTER = { lat: 30.2672, lng: -97.7431 };
+async function parseLocation(location: string): Promise<{ lat: number; lng: number }> {
+  const db = getDb();
+  const cleaned = location.trim();
 
-function parseLocation(location: string): { lat: number; lng: number } {
-  // Check if it's a zip code
-  const zip = location.replace(/\D/g, "");
-  if (zip.length === 5 && ZIP_COORDS[zip]) {
-    return ZIP_COORDS[zip];
+  // 1. Try zip code match
+  const zip = cleaned.replace(/\D/g, "");
+  if (zip.length === 5) {
+    const [match] = await db
+      .select({ latitude: geocodingLookups.latitude, longitude: geocodingLookups.longitude })
+      .from(geocodingLookups)
+      .where(eq(geocodingLookups.zip, zip))
+      .limit(1);
+    if (match?.latitude && match?.longitude) {
+      return { lat: match.latitude, lng: match.longitude };
+    }
   }
 
-  // Default to Austin center for any Austin-related query
-  return AUSTIN_CENTER;
+  // 2. Try city/state match (e.g. "Austin, TX" or "Denver, CO")
+  const cityStateMatch = cleaned.match(/^([^,]+),\s*([A-Z]{2})$/i);
+  if (cityStateMatch) {
+    const [match] = await db
+      .select({ latitude: geocodingLookups.latitude, longitude: geocodingLookups.longitude })
+      .from(geocodingLookups)
+      .where(
+        and(
+          ilike(geocodingLookups.city, cityStateMatch[1].trim()),
+          ilike(geocodingLookups.state, cityStateMatch[2].trim()),
+        ),
+      )
+      .limit(1);
+    if (match?.latitude && match?.longitude) {
+      return { lat: match.latitude, lng: match.longitude };
+    }
+  }
+
+  // 3. Try city name alone
+  const [cityMatch] = await db
+    .select({ latitude: geocodingLookups.latitude, longitude: geocodingLookups.longitude })
+    .from(geocodingLookups)
+    .where(ilike(geocodingLookups.city, cleaned.split(",")[0].trim()))
+    .limit(1);
+  if (cityMatch?.latitude && cityMatch?.longitude) {
+    return { lat: cityMatch.latitude, lng: cityMatch.longitude };
+  }
+
+  // 4. Fallback: if geocoding_lookups is empty or no match, use a reasonable US center
+  // TODO: Add Nominatim public API fallback here for street-level queries
+  // For now, return geographic center of continental US (Kansas)
+  console.error(`parseLocation: no geocoding match for "${location}", using US center fallback`);
+  return { lat: 39.8283, lng: -98.5795 };
 }
 
 function getTodayHours(hours: BusinessHours | null): string | null {
@@ -140,11 +161,14 @@ export async function searchBusinesses(
   params: SearchParams,
 ): Promise<{ results: BusinessSearchResult[]; count: number; query: string }> {
   const db = getDb();
-  const coords = parseLocation(params.location);
+  const coords = await parseLocation(params.location);
   const radiusMeters = (params.radius_km ?? 10) * 1000;
   const categories = queryToCategories(params.query);
 
   // Haversine distance in meters (no PostGIS needed)
+  // TODO: Migrate to PostGIS ST_Distance for better performance at scale.
+  // PostGIS uses spatial indexes and is optimized for distance calculations.
+  // This Haversine formula is a temporary solution for MVP.
   const distanceExpr = sql`(
     6371000 * acos(
       cos(radians(${coords.lat})) * cos(radians(${businesses.latitude}))
